@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "home": "Domů",
+    "services": "Služby",
+    "gallery": "Galerie",
+    "about": "O nás",
+    "contact": "Kontakt",
+    "bookNow": "Rezervovat"
+  },
+  "hero": {
+    "title": "Vaše útočiště",
+    "titleHighlight": "Krásy & Wellness",
+    "subtitle": "Zažijte prémiové spa procedury, odbornou péči o nehty a omlazující kosmetické služby v klidné atmosféře",
+    "bookAppointment": "Rezervovat termín",
+    "viewServices": "Zobrazit služby"
+  },
+  "services": {
+    "title": "Naše služby",
+    "subtitle": "Dopřejte si náš komplexní sortiment kosmetických a wellness procedur přizpůsobených vašim jedinečným potřebám",
+    "categories": {
+      "nails": "Nehty",
+      "spa": "Spa",
+      "beauty": "Kosmetika",
+      "massage": "Masáže"
+    },
+    "items": {
+      "classic-manicure": {
+        "name": "Klasická manikúra",
+        "description": "Profesionální péče o nehty s aplikací laku, ošetřením nehtových lůžek a masáží rukou",
+        "features": [
+          "Tvarování nehtů",
+          "Péče o nehtová lůžka",
+          "Aplikace laku",
+          "Masáž rukou"
+        ]
+      },
+      "gel-manicure": {
+        "name": "Gelová manikúra",
+        "description": "Dlouhotrvající gelový lak s UV vytvrzením pro nehty bez odštípnutí až 2 týdny",
+        "features": [
+          "Gelový lak",
+          "UV vytvrzení",
+          "Vydrží 2+ týdny",
+          "Posílení nehtů"
+        ]
+      },
+      "luxury-pedicure": {
+        "name": "Luxusní pedikúra",
+        "description": "Hýčkající ošetření nohou s peelingem, masáží a lakem",
+        "features": [
+          "Koupel nohou",
+          "Peeling",
+          "Odstranění mozolů",
+          "Masáž",
+          "Lak"
+        ]
+      },
+      "facial-treatment": {
+        "name": "Signaturní ošetření pleti",
+        "description": "Přizpůsobené ošetření pleti pro hloubkové čištění, hydrataci a omlazení",
+        "features": ["Hloubkové čištění", "Peeling", "Maska", "Masáž obličeje"]
+      },
+      "anti-aging-facial": {
+        "name": "Anti-aging ošetření",
+        "description": "Pokročilé ošetření zaměřené na jemné linky, vrásky a pevnost pleti",
+        "features": [
+          "Posílení kolagenu",
+          "LED terapie",
+          "Peptidové sérum",
+          "Liftingová masáž"
+        ]
+      },
+      "swedish-massage": {
+        "name": "Švédská masáž",
+        "description": "Relaxační celotelová masáž pro uvolnění napětí a podporu krevního oběhu",
+        "features": ["Celé tělo", "Relaxace", "Úleva od stresu", "Aromaterapie"]
+      },
+      "deep-tissue-massage": {
+        "name": "Hloubková masáž",
+        "description": "Terapeutická masáž zaměřená na hluboké svalové vrstvy a chronické napětí",
+        "features": [
+          "Hluboký tlak",
+          "Úleva svalů",
+          "Zvládání bolesti",
+          "Cílená terapie"
+        ]
+      },
+      "hot-stone-massage": {
+        "name": "Masáž horkými kameny",
+        "description": "Luxusní masáž s použitím vyhřívaných kamenů pro maximální relaxaci",
+        "features": [
+          "Vyhřívané kameny",
+          "Hluboká relaxace",
+          "Energetická rovnováha",
+          "Aromaterapie"
+        ]
+      },
+      "body-scrub": {
+        "name": "Tělový peeling & zábal",
+        "description": "Exfoliační ošetření následované vyživujícím tělovým zábalem",
+        "features": [
+          "Celotelový peeling",
+          "Hydratační zábal",
+          "Zvlhčení",
+          "Obnova pleti"
+        ]
+      }
+    },
+    "duration": "Trvání",
+    "price": "Cena",
+    "bookNow": "Rezervovat",
+    "common": {
+      "min": "min"
+    }
+  },
+  "bookingCta": {
+    "title": "Připraveni relaxovat & omladit se?",
+    "subtitle": "Rezervujte si termín ještě dnes a zažijte to nejlepší v oblasti krásy a wellness. Náš odborný tým je připraven vás hýčkat.",
+    "button": "Naplánovat návštěvu"
+  },
+  "booking": {
+    "title": "Rezervace termínu",
+    "subtitle": "Vyberte si službu níže a naplánujte svou návštěvu. Těšíme se, že vás budeme hýčkat!",
+    "bookThisService": "Rezervovat tuto službu",
+    "helpTitle": "Potřebujete pomoc s výběrem?",
+    "helpText": "Nejste si jisti, která služba je pro vás ta pravá? Kontaktujte nás a náš odborný tým vám pomůže vybrat perfektní ošetření.",
+    "callUs": "Zavolejte nám",
+    "emailUs": "Napište nám",
+    "loading": "Načítání možností rezervace...",
+    "bookNow": "Rezervovat"
+  },
+  "footer": {
+    "contactUs": "Kontaktujte nás",
+    "hours": "Otevírací doba",
+    "followUs": "Sledujte nás",
+    "weekday": "Pondělí - Pátek",
+    "saturday": "Sobota",
+    "sunday": "Neděle",
+    "rights": "Všechna práva vyhrazena"
+  }
+}

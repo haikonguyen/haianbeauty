@@ -1,31 +1,31 @@
 export interface Service {
-    id: string;
-    name: string;
-    category: ServiceCategory;
-    description: string;
-    duration: string;
-    price: string;
-    image?: string;
-    calcomEventType?: string; // Cal.com event type slug
-    features?: string[];
+  id: string;
+  name: string;
+  category: ServiceCategory;
+  description: string;
+  duration: string;
+  price: string;
+  image?: string;
+  calcomEventType?: string; // Cal.com event type slug
+  features?: string[];
 }
 
 export type ServiceCategory = "nails" | "spa" | "beauty" | "massage";
 
 export interface Testimonial {
-    id: string;
-    name: string;
-    rating: number;
-    comment: string;
-    service?: string;
-    date: string;
-    image?: string;
+  id: string;
+  name: string;
+  rating: number;
+  comment: string;
+  service?: string;
+  date: string;
+  image?: string;
 }
 
 export interface GalleryImage {
-    id: string;
-    src: string;
-    alt: string;
-    category: ServiceCategory;
-    featured?: boolean;
+  id: string;
+  src: string;
+  alt: string;
+  category: ServiceCategory;
+  featured?: boolean;
 }
