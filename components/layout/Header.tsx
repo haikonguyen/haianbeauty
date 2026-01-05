@@ -1,96 +1,133 @@
 "use client";
 
-import Link from "next/link";
-import Image from "next/image";
-import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-
-const navigation = [
-    { name: "Home", href: "/" },
-    { name: "Services", href: "/#services" },
-    { name: "Gallery", href: "/#gallery" },
-    { name: "About", href: "/#about" },
-    { name: "Contact", href: "/#contact" },
-];
+import { Link } from "@/i18n/routing";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Header() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const t = useTranslations("nav");
 
-    return (
-        <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-            <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="flex h-20 items-center justify-between">
-                    {/* Logo */}
-                    <Link href="/" className="flex items-center space-x-3">
-                        <Image
-                            src="/images/logo.jpeg"
-                            alt="Hai An Beauty & Spa"
-                            width={50}
-                            height={50}
-                            className="rounded-full"
-                        />
-                        <span className="text-xl font-semibold text-forest-green">
-                            Hai An Beauty & Spa
-                        </span>
-                    </Link>
+  const navigation = [
+    { name: t("home"), href: "/" as const },
+    { name: t("services"), href: "/#services" },
+    { name: t("gallery"), href: "/#gallery" },
+    { name: t("about"), href: "/#about" },
+    { name: t("contact"), href: "/#contact" },
+  ];
 
-                    {/* Desktop Navigation */}
-                    <div className="hidden md:flex md:items-center md:space-x-8">
-                        {navigation.map((item) => (
-                            <Link
-                                key={item.name}
-                                href={item.href}
-                                className="text-sm font-medium text-foreground/80 hover:text-forest-green transition-colors"
-                            >
-                                {item.name}
-                            </Link>
-                        ))}
-                        <Button asChild className="bg-spa-gold hover:bg-spa-gold/90 text-white">
-                            <Link href="/booking">Book Now</Link>
-                        </Button>
-                    </div>
+  return (
+    <header className="fixed top-0 right-0 left-0 z-50 border-border border-b bg-background/80 backdrop-blur-md">
+      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-20 items-center justify-between">
+          {/* Logo */}
+          <Link href="/" className="flex items-center space-x-3">
+            <Image
+              src="/images/logo.jpeg"
+              alt="Hai An Beauty & Spa"
+              width={50}
+              height={50}
+              className="rounded-full"
+            />
+            <span className="font-semibold text-forest-green text-xl">
+              Hai An Beauty & Spa
+            </span>
+          </Link>
 
-                    {/* Mobile menu button */}
-                    <button
-                        type="button"
-                        className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-foreground hover:bg-accent"
-                        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                    >
-                        <span className="sr-only">Open main menu</span>
-                        {mobileMenuOpen ? (
-                            <X className="h-6 w-6" aria-hidden="true" />
-                        ) : (
-                            <Menu className="h-6 w-6" aria-hidden="true" />
-                        )}
-                    </button>
-                </div>
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex md:items-center md:space-x-8">
+            {navigation.map((item) =>
+              item.href === "/" ? (
+                <Link
+                  key={item.name}
+                  href="/"
+                  className="font-medium text-foreground/80 text-sm transition-colors hover:text-forest-green"
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="font-medium text-foreground/80 text-sm transition-colors hover:text-forest-green"
+                >
+                  {item.name}
+                </a>
+              ),
+            )}
+            <Button
+              asChild
+              className="bg-spa-gold text-white hover:bg-spa-gold/90"
+            >
+              <Link href="/booking">{t("bookNow")}</Link>
+            </Button>
+            <LanguageSwitcher />
+          </div>
 
-                {/* Mobile menu */}
-                {mobileMenuOpen && (
-                    <div className="md:hidden py-4 animate-slide-up">
-                        <div className="space-y-1">
-                            {navigation.map((item) => (
-                                <Link
-                                    key={item.name}
-                                    href={item.href}
-                                    className="block px-3 py-2 text-base font-medium text-foreground/80 hover:text-forest-green hover:bg-accent rounded-md transition-colors"
-                                    onClick={() => setMobileMenuOpen(false)}
-                                >
-                                    {item.name}
-                                </Link>
-                            ))}
-                            <div className="px-3 pt-2">
-                                <Button asChild className="w-full bg-spa-gold hover:bg-spa-gold/90 text-white">
-                                    <Link href="/booking" onClick={() => setMobileMenuOpen(false)}>
-                                        Book Now
-                                    </Link>
-                                </Button>
-                            </div>
-                        </div>
-                    </div>
-                )}
-            </nav>
-        </header>
-    );
+          {/* Mobile menu button */}
+          <div className="flex items-center gap-2 md:hidden">
+            <LanguageSwitcher />
+            <button
+              type="button"
+              className="inline-flex items-center justify-center rounded-md p-2 text-foreground hover:bg-accent"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              <span className="sr-only">Open main menu</span>
+              {mobileMenuOpen ? (
+                <X className="h-6 w-6" aria-hidden="true" />
+              ) : (
+                <Menu className="h-6 w-6" aria-hidden="true" />
+              )}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile menu */}
+        {mobileMenuOpen && (
+          <div className="animate-slide-up py-4 md:hidden">
+            <div className="space-y-1">
+              {navigation.map((item) =>
+                item.href === "/" ? (
+                  <Link
+                    key={item.name}
+                    href="/"
+                    className="block rounded-md px-3 py-2 font-medium text-base text-foreground/80 transition-colors hover:bg-accent hover:text-forest-green"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="block rounded-md px-3 py-2 font-medium text-base text-foreground/80 transition-colors hover:bg-accent hover:text-forest-green"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                ),
+              )}
+              <div className="px-3 pt-2">
+                <Button
+                  asChild
+                  className="w-full bg-spa-gold text-white hover:bg-spa-gold/90"
+                >
+                  <Link
+                    href="/booking"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {t("bookNow")}
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        )}
+      </nav>
+    </header>
+  );
 }

@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "services": "Dịch vụ",
+    "gallery": "Thư viện",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ",
+    "bookNow": "Đặt lịch"
+  },
+  "hero": {
+    "title": "Thiên đường của",
+    "titleHighlight": "Sắc đẹp & Sức khỏe",
+    "subtitle": "Trải nghiệm các liệu trình spa cao cấp, chăm sóc móng chuyên nghiệp và dịch vụ làm đẹp trẻ hóa trong không gian yên bình",
+    "bookAppointment": "Đặt lịch hẹn",
+    "viewServices": "Xem dịch vụ"
+  },
+  "services": {
+    "title": "Dịch vụ của chúng tôi",
+    "subtitle": "Tận hưởng các liệu trình làm đẹp và chăm sóc sức khỏe toàn diện, được thiết kế riêng cho nhu cầu của bạn",
+    "categories": {
+      "nails": "Móng",
+      "spa": "Spa",
+      "beauty": "Làm đẹp",
+      "massage": "Massage"
+    },
+    "items": {
+      "classic-manicure": {
+        "name": "Manicure cơ bản",
+        "description": "Chăm sóc móng chuyên nghiệp với sơn móng, chăm sóc da móng và massage tay",
+        "features": [
+          "Tạo hình móng",
+          "Chăm sóc da móng",
+          "Sơn móng",
+          "Massage tay"
+        ]
+      },
+      "gel-manicure": {
+        "name": "Manicure gel",
+        "description": "Sơn gel bền màu với đèn UV, móng không bong tróc lên đến 2 tuần",
+        "features": ["Sơn gel", "Sấy UV", "Bền 2+ tuần", "Làm chắc móng"]
+      },
+      "luxury-pedicure": {
+        "name": "Pedicure cao cấp",
+        "description": "Chăm sóc chân sang trọng với tẩy da chết, massage và sơn móng",
+        "features": [
+          "Ngâm chân",
+          "Tẩy da chết",
+          "Loại bỏ vết chai",
+          "Massage",
+          "Sơn móng"
+        ]
+      },
+      "facial-treatment": {
+        "name": "Chăm sóc da mặt đặc trưng",
+        "description": "Liệu trình chăm sóc da mặt tùy chỉnh để làm sạch sâu, cấp ẩm và trẻ hóa",
+        "features": ["Làm sạch sâu", "Tẩy da chết", "Đắp mặt nạ", "Massage mặt"]
+      },
+      "anti-aging-facial": {
+        "name": "Chăm sóc da chống lão hóa",
+        "description": "Liệu trình tiên tiến nhắm vào nếp nhăn, vết chân chim và độ săn chắc của da",
+        "features": [
+          "Tăng collagen",
+          "Liệu pháp LED",
+          "Serum peptide",
+          "Massage nâng cơ"
+        ]
+      },
+      "swedish-massage": {
+        "name": "Massage Thụy Điển",
+        "description": "Massage toàn thân thư giãn để giảm căng thẳng và tăng cường tuần hoàn",
+        "features": ["Toàn thân", "Thư giãn", "Giảm stress", "Hương liệu"]
+      },
+      "deep-tissue-massage": {
+        "name": "Massage mô sâu",
+        "description": "Massage trị liệu nhắm vào các lớp cơ sâu và căng thẳng mãn tính",
+        "features": [
+          "Ấn sâu",
+          "Giảm đau cơ",
+          "Quản lý đau",
+          "Trị liệu định hướng"
+        ]
+      },
+      "hot-stone-massage": {
+        "name": "Massage đá nóng",
+        "description": "Massage sang trọng sử dụng đá nóng để thư giãn tối đa",
+        "features": [
+          "Đá nóng",
+          "Thư giãn sâu",
+          "Cân bằng năng lượng",
+          "Hương liệu"
+        ]
+      },
+      "body-scrub": {
+        "name": "Tẩy tế bào chết & Đắp body",
+        "description": "Liệu trình tẩy tế bào chết kết hợp với đắp body nuôi dưỡng",
+        "features": [
+          "Tẩy tế bào chết toàn thân",
+          "Đắp body cấp ẩm",
+          "Dưỡng ẩm",
+          "Tái tạo da"
+        ]
+      }
+    },
+    "duration": "Thời gian",
+    "price": "Giá",
+    "bookNow": "Đặt lịch",
+    "common": {
+      "min": "phút"
+    }
+  },
+  "bookingCta": {
+    "title": "Sẵn sàng thư giãn & Trẻ hóa?",
+    "subtitle": "Đặt lịch hẹn ngay hôm nay và trải nghiệm dịch vụ làm đẹp và chăm sóc sức khỏe tuyệt vời nhất. Đội ngũ chuyên gia của chúng tôi sẵn sàng chăm sóc bạn.",
+    "button": "Lên lịch ghé thăm"
+  },
+  "booking": {
+    "title": "Đặt lịch hẹn",
+    "subtitle": "Chọn dịch vụ bên dưới để lên lịch ghé thăm. Chúng tôi rất mong được chăm sóc bạn!",
+    "bookThisService": "Đặt dịch vụ này",
+    "helpTitle": "Cần giúp lựa chọn?",
+    "helpText": "Không chắc dịch vụ nào phù hợp với bạn? Liên hệ với chúng tôi và đội ngũ chuyên gia sẽ giúp bạn chọn liệu trình hoàn hảo.",
+    "callUs": "Gọi cho chúng tôi",
+    "emailUs": "Email cho chúng tôi",
+    "loading": "Đang tải tùy chọn đặt lịch...",
+    "bookNow": "Đặt lịch"
+  },
+  "footer": {
+    "contactUs": "Liên hệ",
+    "hours": "Giờ làm việc",
+    "followUs": "Theo dõi chúng tôi",
+    "weekday": "Thứ Hai - Thứ Sáu",
+    "saturday": "Thứ Bảy",
+    "sunday": "Chủ Nhật",
+    "rights": "Bản quyền thuộc về"
+  }
+}
