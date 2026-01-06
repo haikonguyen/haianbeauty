@@ -3,10 +3,13 @@ import { defineRouting } from "next-intl/routing";
 
 export const routing = defineRouting({
   // A list of all locales that are supported
-  locales: ["en", "cs", "vi"],
+  locales: ["en", "cs", "vi", "ru"],
 
   // Used when no locale matches
   defaultLocale: "en",
+
+  // Automatically detect user's preferred language from browser settings
+  localeDetection: true,
 
   // The `pathnames` object holds pairs of internal and
   // external paths. Based on the external path, the
@@ -15,6 +18,7 @@ export const routing = defineRouting({
   pathnames: {
     "/": "/",
     "/booking": "/booking",
+    "/portfolio": "/portfolio",
   },
 });
 

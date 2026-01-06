@@ -2,6 +2,7 @@
 
 import { Globe } from "lucide-react";
 import { useParams } from "next/navigation";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -17,22 +18,25 @@ const languages = [
   { code: "en", name: "English", flag: "🇬🇧" },
   { code: "cs", name: "Čeština", flag: "🇨🇿" },
   { code: "vi", name: "Tiếng Việt", flag: "🇻🇳" },
+  { code: "ru", name: "Русский", flag: "🇷🇺" },
 ];
 
 export function LanguageSwitcher() {
+  const [open, setOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
   const params = useParams();
   const currentLocale = params.locale as string;
 
   const handleLanguageChange = (newLocale: string) => {
+    setOpen(false);
     router.replace(pathname, { locale: newLocale });
   };
 
   const currentLanguage = languages.find((lang) => lang.code === currentLocale);
 
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button variant="outline" size="sm" className="gap-2">
           <Globe className="h-4 w-4" />
@@ -49,7 +53,7 @@ export function LanguageSwitcher() {
             <Button
               key={language.code}
               variant={currentLocale === language.code ? "default" : "outline"}
-              className="justify-start gap-3"
+              className="cursor-pointer justify-start gap-3"
               onClick={() => handleLanguageChange(language.code)}
             >
               <span className="text-2xl">{language.flag}</span>
