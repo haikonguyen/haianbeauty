@@ -12,12 +12,15 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const t = useTranslations("nav");
 
-  const navigation = [
-    { name: t("home"), href: "/" as const },
-    { name: t("services"), href: "/#services" },
-    { name: t("gallery"), href: "/#gallery" },
-    { name: t("about"), href: "/#about" },
-    { name: t("contact"), href: "/#contact" },
+  const navigation: Array<
+    | { name: string; href: "/" | "/portfolio" | "/booking"; useLink: true }
+    | { name: string; href: string; useLink: false }
+  > = [
+    { name: t("home"), href: "/" as const, useLink: true },
+    { name: t("services"), href: "/#services", useLink: false },
+    { name: t("gallery"), href: "/portfolio" as const, useLink: true },
+    { name: t("about"), href: "/#about", useLink: false },
+    { name: t("contact"), href: "/#contact", useLink: false },
   ];
 
   return (
@@ -41,10 +44,10 @@ export function Header() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:space-x-8">
             {navigation.map((item) =>
-              item.href === "/" ? (
+              item.useLink ? (
                 <Link
                   key={item.name}
-                  href="/"
+                  href={item.href}
                   className="font-medium text-foreground/80 text-sm transition-colors hover:text-forest-green"
                 >
                   {item.name}
@@ -91,10 +94,10 @@ export function Header() {
           <div className="animate-slide-up py-4 md:hidden">
             <div className="space-y-1">
               {navigation.map((item) =>
-                item.href === "/" ? (
+                item.useLink ? (
                   <Link
                     key={item.name}
-                    href="/"
+                    href={item.href}
                     className="block rounded-md px-3 py-2 font-medium text-base text-foreground/80 transition-colors hover:bg-accent hover:text-forest-green"
                     onClick={() => setMobileMenuOpen(false)}
                   >

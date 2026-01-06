@@ -2,7 +2,7 @@
   "nav": {
     "home": "Domů",
     "services": "Služby",
-    "gallery": "Galerie",
+    "gallery": "Portfolio",
     "about": "O nás",
     "contact": "Kontakt",
     "bookNow": "Rezervovat"
@@ -128,6 +128,39 @@
     "emailUs": "Napište nám",
     "loading": "Načítání možností rezervace...",
     "bookNow": "Rezervovat"
+  },
+  "gallery": {
+    "title": "Naše portfolio",
+    "subtitle": "Prozkoumejte naši krásnou práci a nechte se inspirovat pro vaši další návštěvu",
+    "filters": {
+      "all": "Vše",
+      "nails": "Nehty",
+      "beauty": "Kosmetika",
+      "spa": "Spa",
+      "massage": "Masáže"
+    },
+    "lightbox": {
+      "previous": "Předchozí obrázek",
+      "next": "Další obrázek",
+      "close": "Zavřít galerii",
+      "zoom": "Přiblížit obrázek"
+    },
+    "items": {
+      "nails1": "Elegantní gelová manikúra s nude lakem",
+      "nails2": "Klasická francouzská manikúra",
+      "nails3": "Kreativní nail art design",
+      "nails4": "Luxusní pedikúra se spa ošetřením",
+      "beauty1": "Relaxační ošetření pleti",
+      "beauty2": "Anti-aging ošetření s LED terapií",
+      "beauty3": "Prémiové produkty péče o pleť",
+      "spa1": "Terapie masáže horkými kameny",
+      "spa2": "Exfoliační ošetření tělovým peelingem",
+      "spa3": "Klidné spa prostředí",
+      "massage1": "Švédská masáž",
+      "massage2": "Hloubková masáž",
+      "video1": "Virtuální prohlídka našeho spa"
+    },
+    "viewFullPortfolio": "Zobrazit celé portfolio"
   },
   "footer": {
     "contactUs": "Kontaktujte nás",

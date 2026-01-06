@@ -73,6 +73,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body
         className={`${inter.variable} ${playfair.variable} font-sans antialiased`}
+        suppressHydrationWarning
       >
         <NextIntlClientProvider messages={messages}>
           <Header />
