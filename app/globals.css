@@ -46,13 +46,13 @@
   --radius-4xl: calc(var(--radius) + 16px);
 
   /* Custom Spa Brand Colors */
-  --color-forest-green: #2D5F4F;
-  --color-sage-green: #8BA888;
-  --color-deep-teal: #1A4D3E;
-  --color-spa-cream: #F5F1E8;
-  --color-spa-pink: #E8C5C5;
-  --color-spa-gold: #D4AF37;
-  --color-charcoal: #2C2C2C;
+  --color-forest-green: #2d5f4f;
+  --color-sage-green: #8ba888;
+  --color-deep-teal: #1a4d3e;
+  --color-spa-cream: #f5f1e8;
+  --color-spa-pink: #e8c5c5;
+  --color-spa-gold: #d4af37;
+  --color-charcoal: #2c2c2c;
 }
 
 :root {

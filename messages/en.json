@@ -1,0 +1,146 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "gallery": "Gallery",
+    "about": "About",
+    "contact": "Contact",
+    "bookNow": "Book Now"
+  },
+  "hero": {
+    "title": "Your Sanctuary of",
+    "titleHighlight": "Beauty & Wellness",
+    "subtitle": "Experience premium spa treatments, expert nail care, and rejuvenating beauty services in a serene atmosphere",
+    "bookAppointment": "Book Appointment",
+    "viewServices": "View Services"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Indulge in our comprehensive range of beauty and wellness treatments, tailored to your unique needs",
+    "categories": {
+      "nails": "Nails",
+      "spa": "Spa",
+      "beauty": "Beauty",
+      "massage": "Massage"
+    },
+    "items": {
+      "classic-manicure": {
+        "name": "Classic Manicure",
+        "description": "Professional nail care with polish application, cuticle treatment, and hand massage",
+        "features": [
+          "Nail shaping",
+          "Cuticle care",
+          "Polish application",
+          "Hand massage"
+        ]
+      },
+      "gel-manicure": {
+        "name": "Gel Manicure",
+        "description": "Long-lasting gel polish with UV curing for chip-free nails up to 2 weeks",
+        "features": [
+          "Gel polish",
+          "UV curing",
+          "Lasts 2+ weeks",
+          "Nail strengthening"
+        ]
+      },
+      "luxury-pedicure": {
+        "name": "Luxury Pedicure",
+        "description": "Indulgent foot treatment with exfoliation, massage, and polish",
+        "features": [
+          "Foot soak",
+          "Exfoliation",
+          "Callus removal",
+          "Massage",
+          "Polish"
+        ]
+      },
+      "facial-treatment": {
+        "name": "Signature Facial",
+        "description": "Customized facial treatment for deep cleansing, hydration, and rejuvenation",
+        "features": [
+          "Deep cleansing",
+          "Exfoliation",
+          "Mask treatment",
+          "Facial massage"
+        ]
+      },
+      "anti-aging-facial": {
+        "name": "Anti-Aging Facial",
+        "description": "Advanced treatment targeting fine lines, wrinkles, and skin firmness",
+        "features": [
+          "Collagen boost",
+          "LED therapy",
+          "Peptide serum",
+          "Lifting massage"
+        ]
+      },
+      "swedish-massage": {
+        "name": "Swedish Massage",
+        "description": "Relaxing full-body massage to relieve tension and promote circulation",
+        "features": ["Full body", "Relaxation", "Stress relief", "Aromatherapy"]
+      },
+      "deep-tissue-massage": {
+        "name": "Deep Tissue Massage",
+        "description": "Therapeutic massage targeting deep muscle layers and chronic tension",
+        "features": [
+          "Deep pressure",
+          "Muscle relief",
+          "Pain management",
+          "Targeted therapy"
+        ]
+      },
+      "hot-stone-massage": {
+        "name": "Hot Stone Massage",
+        "description": "Luxurious massage using heated stones for ultimate relaxation",
+        "features": [
+          "Heated stones",
+          "Deep relaxation",
+          "Energy balance",
+          "Aromatherapy"
+        ]
+      },
+      "body-scrub": {
+        "name": "Body Scrub & Wrap",
+        "description": "Exfoliating treatment followed by nourishing body wrap",
+        "features": [
+          "Full body exfoliation",
+          "Hydrating wrap",
+          "Moisturizing",
+          "Skin renewal"
+        ]
+      }
+    },
+    "duration": "Duration",
+    "price": "Price",
+    "bookNow": "Book Now",
+    "common": {
+      "min": "min"
+    }
+  },
+  "bookingCta": {
+    "title": "Ready to Relax & Rejuvenate?",
+    "subtitle": "Book your appointment today and experience the ultimate in beauty and wellness. Our expert team is ready to pamper you.",
+    "button": "Schedule Your Visit"
+  },
+  "booking": {
+    "title": "Book Your Appointment",
+    "subtitle": "Select a service below to schedule your visit. We look forward to pampering you!",
+    "bookThisService": "Book This Service",
+    "helpTitle": "Need Help Choosing?",
+    "helpText": "Not sure which service is right for you? Contact us and our expert team will help you select the perfect treatment.",
+    "callUs": "Call Us",
+    "emailUs": "Email Us",
+    "loading": "Loading booking options...",
+    "bookNow": "Book Now"
+  },
+  "footer": {
+    "contactUs": "Contact Us",
+    "hours": "Hours",
+    "followUs": "Follow Us",
+    "weekday": "Monday - Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "rights": "All rights reserved"
+  }
+}
