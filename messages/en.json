@@ -2,7 +2,7 @@
   "nav": {
     "home": "Home",
     "services": "Services",
-    "gallery": "Gallery",
+    "gallery": "Portfolio",
     "about": "About",
     "contact": "Contact",
     "bookNow": "Book Now"
@@ -133,6 +133,39 @@
     "emailUs": "Email Us",
     "loading": "Loading booking options...",
     "bookNow": "Book Now"
+  },
+  "gallery": {
+    "title": "Our Portfolio",
+    "subtitle": "Explore our beautiful work and get inspired for your next visit",
+    "filters": {
+      "all": "All",
+      "nails": "Nails",
+      "beauty": "Beauty",
+      "spa": "Spa",
+      "massage": "Massage"
+    },
+    "lightbox": {
+      "previous": "Previous image",
+      "next": "Next image",
+      "close": "Close gallery",
+      "zoom": "Zoom image"
+    },
+    "items": {
+      "nails1": "Elegant gel manicure with nude polish",
+      "nails2": "Classic French manicure",
+      "nails3": "Creative nail art design",
+      "nails4": "Luxury pedicure with spa treatment",
+      "beauty1": "Relaxing facial treatment",
+      "beauty2": "Anti-aging facial with LED therapy",
+      "beauty3": "Premium skincare products",
+      "spa1": "Hot stone massage therapy",
+      "spa2": "Exfoliating body scrub treatment",
+      "spa3": "Tranquil spa environment",
+      "massage1": "Swedish massage session",
+      "massage2": "Deep tissue massage therapy",
+      "video1": "Virtual tour of our spa facilities"
+    },
+    "viewFullPortfolio": "View Full Portfolio"
   },
   "footer": {
     "contactUs": "Contact Us",
