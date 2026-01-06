@@ -184,3 +184,25 @@
 .animate-scale-in {
   animation: scale-in 0.4s ease-out;
 }
+
+/* Yet Another React Lightbox - Custom Spa Theme */
+.yarl__root {
+  --yarl__color_backdrop: rgba(45, 95, 79, 0.95);
+  --yarl__color_button: #f5f1e8;
+  --yarl__color_button_active: #d4af37;
+  --yarl__color_button_disabled: rgba(245, 241, 232, 0.3);
+}
+
+.yarl__button {
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+  transition: all 0.3s ease;
+}
+
+.yarl__button:hover {
+  background: rgba(212, 175, 55, 0.2);
+  transform: scale(1.1);
+}
+
+.yarl__slide {
+  animation: fade-in 0.4s ease-out;
+}

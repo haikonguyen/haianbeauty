@@ -2,7 +2,7 @@
   "nav": {
     "home": "Trang chủ",
     "services": "Dịch vụ",
-    "gallery": "Thư viện",
+    "gallery": "Tác phẩm",
     "about": "Giới thiệu",
     "contact": "Liên hệ",
     "bookNow": "Đặt lịch"
@@ -123,6 +123,39 @@
     "emailUs": "Email cho chúng tôi",
     "loading": "Đang tải tùy chọn đặt lịch...",
     "bookNow": "Đặt lịch"
+  },
+  "gallery": {
+    "title": "Tác phẩm của chúng tôi",
+    "subtitle": "Khám phá những tác phẩm đẹp của chúng tôi và lấy cảm hứng cho chuyến thăm tiếp theo",
+    "filters": {
+      "all": "Tất cả",
+      "nails": "Móng",
+      "beauty": "Làm đẹp",
+      "spa": "Spa",
+      "massage": "Massage"
+    },
+    "lightbox": {
+      "previous": "Ảnh trước",
+      "next": "Ảnh tiếp theo",
+      "close": "Đóng thư viện",
+      "zoom": "Phóng to ảnh"
+    },
+    "items": {
+      "nails1": "Manicure gel thanh lịch với sơn nude",
+      "nails2": "Manicure kiểu Pháp cổ điển",
+      "nails3": "Thiết kế nail art sáng tạo",
+      "nails4": "Pedicure cao cấp với liệu trình spa",
+      "beauty1": "Liệu trình chăm sóc da mặt thư giãn",
+      "beauty2": "Chăm sóc da chống lão hóa với liệu pháp LED",
+      "beauty3": "Sản phẩm chăm sóc da cao cấp",
+      "spa1": "Liệu pháp massage đá nóng",
+      "spa2": "Liệu trình tẩy tế bào chết toàn thân",
+      "spa3": "Môi trường spa yên bình",
+      "massage1": "Buổi massage Thụy Điển",
+      "massage2": "Liệu pháp massage mô sâu",
+      "video1": "Tour ảo cơ sở spa của chúng tôi"
+    },
+    "viewFullPortfolio": "Xem toàn bộ tác phẩm"
   },
   "footer": {
     "contactUs": "Liên hệ",
