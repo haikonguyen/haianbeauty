@@ -1,5 +1,5 @@
 export const SITE_CONFIG = {
-  name: "Hai An Beauty & Spa",
+  name: "HaiAn Beauty & Spa",
   description:
     "Premium beauty, spa, and nail studio services for your ultimate relaxation and rejuvenation",
   url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",

@@ -21,94 +21,75 @@
       "nails": "Nehty",
       "spa": "Spa",
       "beauty": "Kosmetika",
-      "massage": "Masáže"
+      "massage": "Masáže",
+      "laser": "Laserová epilace"
     },
     "items": {
-      "classic-manicure": {
-        "name": "Klasická manikúra",
-        "description": "Profesionální péče o nehty s aplikací laku, ošetřením nehtových lůžek a masáží rukou",
+      "manicure-shellac": {
+        "name": "Manikúra s lakováním Shellak/Gellak",
+        "description": "Profesionální manikúra s dlouhotrvajícím Shellac/Gellac lakem",
         "features": [
-          "Tvarování nehtů",
-          "Péče o nehtová lůžka",
-          "Aplikace laku",
-          "Masáž rukou"
+          "Úprava tvaru nehtů",
+          "Ošetření nehtových lůžek",
+          "Shellac/Gellac lakování",
+          "Vydrží až 3 týdny"
         ]
       },
-      "gel-manicure": {
-        "name": "Gelová manikúra",
-        "description": "Dlouhotrvající gelový lak s UV vytvrzením pro nehty bez odštípnutí až 2 týdny",
-        "features": [
-          "Gelový lak",
-          "UV vytvrzení",
-          "Vydrží 2+ týdny",
-          "Posílení nehtů"
-        ]
-      },
-      "luxury-pedicure": {
-        "name": "Luxusní pedikúra",
-        "description": "Hýčkající ošetření nohou s peelingem, masáží a lakem",
+      "pedicure-shellac": {
+        "name": "Pedikúra s lakováním Shellak/Gellak",
+        "description": "Kompletní pedikúra s dlouhotrvajícím Shellac/Gellac lakem",
         "features": [
           "Koupel nohou",
-          "Peeling",
-          "Odstranění mozolů",
-          "Masáž",
-          "Lak"
+          "Odstranění ztvrdlé kůže",
+          "Shellac/Gellac lakování",
+          "Masáž nohou"
         ]
       },
-      "facial-treatment": {
-        "name": "Signaturní ošetření pleti",
-        "description": "Přizpůsobené ošetření pleti pro hloubkové čištění, hydrataci a omlazení",
-        "features": ["Hloubkové čištění", "Peeling", "Maska", "Masáž obličeje"]
-      },
-      "anti-aging-facial": {
-        "name": "Anti-aging ošetření",
-        "description": "Pokročilé ošetření zaměřené na jemné linky, vrásky a pevnost pleti",
+      "gel-nails-polish": {
+        "name": "Gelové nehty s lakováním",
+        "description": "Nové gelové nehty s profesionálním lakováním",
         "features": [
-          "Posílení kolagenu",
-          "LED terapie",
-          "Peptidové sérum",
-          "Liftingová masáž"
+          "Modelace gelových nehtů",
+          "Lakování dle výběru",
+          "Dlouhotrvající výsledek",
+          "Přirozený vzhled"
         ]
       },
-      "swedish-massage": {
-        "name": "Švédská masáž",
-        "description": "Relaxační celotelová masáž pro uvolnění napětí a podporu krevního oběhu",
-        "features": ["Celé tělo", "Relaxace", "Úleva od stresu", "Aromaterapie"]
-      },
-      "deep-tissue-massage": {
-        "name": "Hloubková masáž",
-        "description": "Terapeutická masáž zaměřená na hluboké svalové vrstvy a chronické napětí",
+      "lashes-3d": {
+        "name": "Řasy 3D",
+        "description": "Prodlužování řas 3D technikou pro přirozený objem",
         "features": [
-          "Hluboký tlak",
-          "Úleva svalů",
-          "Zvládání bolesti",
-          "Cílená terapie"
+          "3D technika",
+          "Přirozený vzhled",
+          "Dlouhotrvající efekt",
+          "Profesionální aplikace"
         ]
       },
-      "hot-stone-massage": {
-        "name": "Masáž horkými kameny",
-        "description": "Luxusní masáž s použitím vyhřívaných kamenů pro maximální relaxaci",
+      "eyebrow-shaping-tinting": {
+        "name": "Úprava + Barvení obočí",
+        "description": "Kompletní úprava a barvení obočí pro dokonalý vzhled",
         "features": [
-          "Vyhřívané kameny",
-          "Hluboká relaxace",
-          "Energetická rovnováha",
-          "Aromaterapie"
+          "Tvarování obočí",
+          "Profesionální barvení",
+          "Dlouhotrvající barva",
+          "Přirozený výsledek"
         ]
       },
-      "body-scrub": {
-        "name": "Tělový peeling & zábal",
-        "description": "Exfoliační ošetření následované vyživujícím tělovým zábalem",
+      "pedicure-footlogix-shellac": {
+        "name": "Pedikúra FOOTLOGIX s Shellak/Gellak",
+        "description": "Prémiová pedikúra FOOTLOGIX s dlouhotrvajícím lakem",
         "features": [
-          "Celotelový peeling",
-          "Hydratační zábal",
-          "Zvlhčení",
-          "Obnova pleti"
+          "FOOTLOGIX profesionální péče",
+          "Hloubkové ošetření",
+          "Shellac/Gellac lakování",
+          "Dlouhodobý efekt"
         ]
       }
     },
     "duration": "Trvání",
     "price": "Cena",
     "bookNow": "Rezervovat",
+    "viewAllServices": "Zobrazit všechny služby",
     "common": {
       "min": "min"
     }
