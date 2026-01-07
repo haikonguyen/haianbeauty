@@ -21,99 +21,75 @@
       "nails": "Nails",
       "spa": "Spa",
       "beauty": "Beauty",
-      "massage": "Massage"
+      "massage": "Massage",
+      "laser": "Laser Epilation"
     },
     "items": {
-      "classic-manicure": {
-        "name": "Classic Manicure",
-        "description": "Professional nail care with polish application, cuticle treatment, and hand massage",
+      "manicure-shellac": {
+        "name": "Shellac/Gellac Manicure",
+        "description": "Professional manicure with long-lasting Shellac/Gellac polish",
         "features": [
           "Nail shaping",
           "Cuticle care",
-          "Polish application",
-          "Hand massage"
+          "Shellac/Gellac polish",
+          "Lasts up to 3 weeks"
         ]
       },
-      "gel-manicure": {
-        "name": "Gel Manicure",
-        "description": "Long-lasting gel polish with UV curing for chip-free nails up to 2 weeks",
-        "features": [
-          "Gel polish",
-          "UV curing",
-          "Lasts 2+ weeks",
-          "Nail strengthening"
-        ]
-      },
-      "luxury-pedicure": {
-        "name": "Luxury Pedicure",
-        "description": "Indulgent foot treatment with exfoliation, massage, and polish",
+      "pedicure-shellac": {
+        "name": "Shellac/Gellac Pedicure",
+        "description": "Complete pedicure with long-lasting Shellac/Gellac polish",
         "features": [
           "Foot soak",
-          "Exfoliation",
           "Callus removal",
-          "Massage",
-          "Polish"
+          "Shellac/Gellac polish",
+          "Foot massage"
         ]
       },
-      "facial-treatment": {
-        "name": "Signature Facial",
-        "description": "Customized facial treatment for deep cleansing, hydration, and rejuvenation",
+      "gel-nails-polish": {
+        "name": "Gel Nails with Polish",
+        "description": "New gel nails with professional polish application",
         "features": [
-          "Deep cleansing",
-          "Exfoliation",
-          "Mask treatment",
-          "Facial massage"
+          "Gel nail modeling",
+          "Polish of your choice",
+          "Long-lasting results",
+          "Natural look"
         ]
       },
-      "anti-aging-facial": {
-        "name": "Anti-Aging Facial",
-        "description": "Advanced treatment targeting fine lines, wrinkles, and skin firmness",
+      "lashes-3d": {
+        "name": "3D Lashes",
+        "description": "3D lash extension technique for natural volume",
         "features": [
-          "Collagen boost",
-          "LED therapy",
-          "Peptide serum",
-          "Lifting massage"
+          "3D technique",
+          "Natural look",
+          "Long-lasting effect",
+          "Professional application"
         ]
       },
-      "swedish-massage": {
-        "name": "Swedish Massage",
-        "description": "Relaxing full-body massage to relieve tension and promote circulation",
-        "features": ["Full body", "Relaxation", "Stress relief", "Aromatherapy"]
-      },
-      "deep-tissue-massage": {
-        "name": "Deep Tissue Massage",
-        "description": "Therapeutic massage targeting deep muscle layers and chronic tension",
+      "eyebrow-shaping-tinting": {
+        "name": "Eyebrow Shaping + Tinting",
+        "description": "Complete eyebrow shaping and tinting for perfect look",
         "features": [
-          "Deep pressure",
-          "Muscle relief",
-          "Pain management",
-          "Targeted therapy"
+          "Eyebrow shaping",
+          "Professional tinting",
+          "Long-lasting color",
+          "Natural result"
         ]
       },
-      "hot-stone-massage": {
-        "name": "Hot Stone Massage",
-        "description": "Luxurious massage using heated stones for ultimate relaxation",
+      "pedicure-footlogix-shellac": {
+        "name": "FOOTLOGIX Pedicure with Shellac/Gellac",
+        "description": "Premium FOOTLOGIX pedicure with long-lasting polish",
         "features": [
-          "Heated stones",
-          "Deep relaxation",
-          "Energy balance",
-          "Aromatherapy"
-        ]
-      },
-      "body-scrub": {
-        "name": "Body Scrub & Wrap",
-        "description": "Exfoliating treatment followed by nourishing body wrap",
-        "features": [
-          "Full body exfoliation",
-          "Hydrating wrap",
-          "Moisturizing",
-          "Skin renewal"
+          "FOOTLOGIX professional care",
+          "Deep treatment",
+          "Shellac/Gellac polish",
+          "Long-term effect"
         ]
       }
     },
     "duration": "Duration",
     "price": "Price",
     "bookNow": "Book Now",
+    "viewAllServices": "View All Services",
     "common": {
       "min": "min"
     }

@@ -21,89 +21,75 @@
       "nails": "Móng",
       "spa": "Spa",
       "beauty": "Làm đẹp",
-      "massage": "Massage"
+      "massage": "Massage",
+      "laser": "Triệt lông laser"
     },
     "items": {
-      "classic-manicure": {
-        "name": "Manicure cơ bản",
-        "description": "Chăm sóc móng chuyên nghiệp với sơn móng, chăm sóc da móng và massage tay",
+      "manicure-shellac": {
+        "name": "Manicure Shellac/Gellac",
+        "description": "Manicure chuyên nghiệp với sơn Shellac/Gellac bền màu",
         "features": [
           "Tạo hình móng",
           "Chăm sóc da móng",
-          "Sơn móng",
-          "Massage tay"
+          "Sơn Shellac/Gellac",
+          "Bền lên đến 3 tuần"
         ]
       },
-      "gel-manicure": {
-        "name": "Manicure gel",
-        "description": "Sơn gel bền màu với đèn UV, móng không bong tróc lên đến 2 tuần",
-        "features": ["Sơn gel", "Sấy UV", "Bền 2+ tuần", "Làm chắc móng"]
-      },
-      "luxury-pedicure": {
-        "name": "Pedicure cao cấp",
-        "description": "Chăm sóc chân sang trọng với tẩy da chết, massage và sơn móng",
+      "pedicure-shellac": {
+        "name": "Pedicure Shellac/Gellac",
+        "description": "Pedicure hoàn chỉnh với sơn Shellac/Gellac bền màu",
         "features": [
           "Ngâm chân",
-          "Tẩy da chết",
           "Loại bỏ vết chai",
-          "Massage",
-          "Sơn móng"
+          "Sơn Shellac/Gellac",
+          "Massage chân"
         ]
       },
-      "facial-treatment": {
-        "name": "Chăm sóc da mặt đặc trưng",
-        "description": "Liệu trình chăm sóc da mặt tùy chỉnh để làm sạch sâu, cấp ẩm và trẻ hóa",
-        "features": ["Làm sạch sâu", "Tẩy da chết", "Đắp mặt nạ", "Massage mặt"]
-      },
-      "anti-aging-facial": {
-        "name": "Chăm sóc da chống lão hóa",
-        "description": "Liệu trình tiên tiến nhắm vào nếp nhăn, vết chân chim và độ săn chắc của da",
+      "gel-nails-polish": {
+        "name": "Móng gel với sơn",
+        "description": "Móng gel mới với sơn chuyên nghiệp",
         "features": [
-          "Tăng collagen",
-          "Liệu pháp LED",
-          "Serum peptide",
-          "Massage nâng cơ"
+          "Nối móng gel",
+          "Sơn theo lựa chọn",
+          "Kết quả bền lâu",
+          "Vẻ tự nhiên"
         ]
       },
-      "swedish-massage": {
-        "name": "Massage Thụy Điển",
-        "description": "Massage toàn thân thư giãn để giảm căng thẳng và tăng cường tuần hoàn",
-        "features": ["Toàn thân", "Thư giãn", "Giảm stress", "Hương liệu"]
-      },
-      "deep-tissue-massage": {
-        "name": "Massage mô sâu",
-        "description": "Massage trị liệu nhắm vào các lớp cơ sâu và căng thẳng mãn tính",
+      "lashes-3d": {
+        "name": "Nối mi 3D",
+        "description": "Kỹ thuật nối mi 3D cho độ dày tự nhiên",
         "features": [
-          "Ấn sâu",
-          "Giảm đau cơ",
-          "Quản lý đau",
-          "Trị liệu định hướng"
+          "Kỹ thuật 3D",
+          "Vẻ tự nhiên",
+          "Hiệu quả lâu dài",
+          "Thực hiện chuyên nghiệp"
         ]
       },
-      "hot-stone-massage": {
-        "name": "Massage đá nóng",
-        "description": "Massage sang trọng sử dụng đá nóng để thư giãn tối đa",
+      "eyebrow-shaping-tinting": {
+        "name": "Tạo hình + Nhuộm lông mày",
+        "description": "Tạo hình và nhuộm lông mày hoàn chỉnh cho vẻ hoàn hảo",
         "features": [
-          "Đá nóng",
-          "Thư giãn sâu",
-          "Cân bằng năng lượng",
-          "Hương liệu"
+          "Tạo hình lông mày",
+          "Nhuộm chuyên nghiệp",
+          "Màu bền lâu",
+          "Kết quả tự nhiên"
         ]
       },
-      "body-scrub": {
-        "name": "Tẩy tế bào chết & Đắp body",
-        "description": "Liệu trình tẩy tế bào chết kết hợp với đắp body nuôi dưỡng",
+      "pedicure-footlogix-shellac": {
+        "name": "Pedicure FOOTLOGIX với Shellac/Gellac",
+        "description": "Pedicure cao cấp FOOTLOGIX với sơn bền màu",
         "features": [
-          "Tẩy tế bào chết toàn thân",
-          "Đắp body cấp ẩm",
-          "Dưỡng ẩm",
-          "Tái tạo da"
+          "Chăm sóc chuyên nghiệp FOOTLOGIX",
+          "Điều trị sâu",
+          "Sơn Shellac/Gellac",
+          "Hiệu quả lâu dài"
         ]
       }
     },
     "duration": "Thời gian",
     "price": "Giá",
     "bookNow": "Đặt lịch",
+    "viewAllServices": "Xem tất cả dịch vụ",
     "common": {
       "min": "phút"
     }

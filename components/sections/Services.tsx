@@ -1,6 +1,6 @@
 "use client";
 
-import { Clock, DollarSign, Sparkles } from "lucide-react";
+import { Clock, Sparkles } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import {
@@ -12,7 +12,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { SERVICES } from "@/features/services/data/services";
-import { Link } from "@/i18n/routing";
 
 export function Services() {
   const t = useTranslations("services");
@@ -54,9 +53,9 @@ export function Services() {
               <CardContent>
                 {service.features && (
                   <ul className="space-y-2">
-                    {service.features.slice(0, 3).map((_, idx) => (
+                    {service.features.slice(0, 3).map((_feature, idx) => (
                       <li
-                        key={idx}
+                        key={`${service.id}-feature-${idx}`}
                         className="flex items-center text-charcoal/70 text-sm"
                       >
                         <span className="mr-2 h-1.5 w-1.5 rounded-full bg-sage-green" />
@@ -73,27 +72,45 @@ export function Services() {
                     <Clock className="mr-1 h-4 w-4" />
                     {service.duration} {t("common.min")}
                   </div>
-                  <div className="flex items-center font-semibold text-forest-green text-lg">
-                    <DollarSign className="h-5 w-5" />
-                    {service.price.replace("$", "")}
+                  <div className="font-semibold text-forest-green text-lg">
+                    {service.price}
                   </div>
                 </div>
                 <Button
                   asChild
                   className="bg-spa-gold text-white hover:bg-spa-gold/90"
                 >
-                  <Link
-                    href={{
-                      pathname: "/booking",
-                      query: { service: service.id },
-                    }}
+                  <a
+                    href={
+                      service.setmoreBookingUrl ||
+                      "https://anbeauty.setmore.com/"
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     {t("bookNow")}
-                  </Link>
+                  </a>
                 </Button>
               </CardFooter>
             </Card>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
+            className="border-sage-green text-sage-green hover:bg-sage-green hover:text-white"
+          >
+            <a
+              href="https://anbeauty.setmore.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("viewAllServices")}
+            </a>
+          </Button>
         </div>
       </div>
     </section>
