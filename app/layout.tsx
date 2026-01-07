@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Hai An Beauty & Spa",
+  title: "HaiAn Beauty & Spa",
   description: "Premium beauty, spa, and nail studio services",
 };
 

@@ -7,10 +7,11 @@ export interface Service {
   price: string;
   image?: string;
   calcomEventType?: string; // Cal.com event type slug
+  setmoreBookingUrl?: string; // Direct Setmore booking URL
   features?: string[];
 }
 
-export type ServiceCategory = "nails" | "spa" | "beauty" | "massage";
+export type ServiceCategory = "nails" | "spa" | "beauty" | "massage" | "laser";
 
 export interface Testimonial {
   id: string;

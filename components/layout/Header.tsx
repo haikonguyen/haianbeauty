@@ -31,13 +31,13 @@ export function Header() {
           <Link href="/" className="flex items-center space-x-3">
             <Image
               src="/images/logo.jpeg"
-              alt="Hai An Beauty & Spa"
+              alt="HaiAn Beauty & Spa"
               width={50}
               height={50}
               className="rounded-full"
             />
             <span className="font-semibold text-forest-green text-xl">
-              Hai An Beauty & Spa
+              HaiAn Beauty & Spa
             </span>
           </Link>
 
@@ -66,7 +66,13 @@ export function Header() {
               asChild
               className="bg-spa-gold text-white hover:bg-spa-gold/90"
             >
-              <Link href="/booking">{t("bookNow")}</Link>
+              <a
+                href="https://anbeauty.setmore.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t("bookNow")}
+              </a>
             </Button>
             <LanguageSwitcher />
           </div>
@@ -119,12 +125,14 @@ export function Header() {
                   asChild
                   className="w-full bg-spa-gold text-white hover:bg-spa-gold/90"
                 >
-                  <Link
-                    href="/booking"
+                  <a
+                    href="https://anbeauty.setmore.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {t("bookNow")}
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </div>
