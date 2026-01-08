@@ -143,6 +143,15 @@
     },
     "viewFullPortfolio": "Zobrazit celé portfolio"
   },
+  "reviews": {
+    "title": "Co říkají naši klienti",
+    "subtitle": "Přečtěte si autentické recenze od našich klientů na Google",
+    "loading": "Načítání recenzí...",
+    "reviewsCount": "recenzí",
+    "writeReview": "Napsat recenzi",
+    "readMore": "Číst více",
+    "showLess": "Zobrazit méně"
+  },
   "footer": {
     "contactUs": "Kontaktujte nás",
     "hours": "Otevírací doba",

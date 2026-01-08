@@ -143,6 +143,15 @@
     },
     "viewFullPortfolio": "View Full Portfolio"
   },
+  "reviews": {
+    "title": "What Our Clients Say",
+    "subtitle": "Read authentic reviews from our valued clients on Google",
+    "loading": "Loading reviews...",
+    "reviewsCount": "reviews",
+    "writeReview": "Write a Review",
+    "readMore": "Read more",
+    "showLess": "Show less"
+  },
   "footer": {
     "contactUs": "Contact Us",
     "hours": "Hours",

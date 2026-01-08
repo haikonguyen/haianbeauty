@@ -143,6 +143,15 @@
     },
     "viewFullPortfolio": "Xem toàn bộ tác phẩm"
   },
+  "reviews": {
+    "title": "Khách hàng nói gì về chúng tôi",
+    "subtitle": "Đọc đánh giá chân thực từ khách hàng của chúng tôi trên Google",
+    "loading": "Đang tải đánh giá...",
+    "reviewsCount": "đánh giá",
+    "writeReview": "Viết đánh giá",
+    "readMore": "Đọc thêm",
+    "showLess": "Thu gọn"
+  },
   "footer": {
     "contactUs": "Liên hệ",
     "hours": "Giờ làm việc",
