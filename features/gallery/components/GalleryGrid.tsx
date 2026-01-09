@@ -13,6 +13,7 @@ interface GalleryGridProps {
 }
 
 export function GalleryGrid({ items, isLoading = false }: GalleryGridProps) {
+  console.log("items", items);
   const [lightboxIndex, setLightboxIndex] = useState(-1);
 
   if (isLoading) {

@@ -8,7 +8,7 @@
     "bookNow": "Rezervovat"
   },
   "hero": {
-    "title": "Vaše útočiště",
+    "title": "Vaše oáza",
     "titleHighlight": "Krásy & Wellness",
     "subtitle": "Zažijte prémiové spa procedury, odbornou péči o nehty a omlazující kosmetické služby v klidné atmosféře",
     "bookAppointment": "Rezervovat termín",
@@ -116,9 +116,10 @@
     "filters": {
       "all": "Vše",
       "nails": "Nehty",
-      "beauty": "Kosmetika",
+      "lashes": "Řasy",
       "spa": "Spa",
-      "massage": "Masáže"
+      "massage": "Masáže",
+      "pmu": "PMU"
     },
     "lightbox": {
       "previous": "Předchozí obrázek",
@@ -131,15 +132,23 @@
       "nails2": "Klasická francouzská manikúra",
       "nails3": "Kreativní nail art design",
       "nails4": "Luxusní pedikúra se spa ošetřením",
-      "beauty1": "Relaxační ošetření pleti",
-      "beauty2": "Anti-aging ošetření s LED terapií",
-      "beauty3": "Prémiové produkty péče o pleť",
+      "lashes1": "Krásné prodloužení řas",
+      "lashes2": "Objemové prodloužení řas",
+      "lashes3": "Klasické prodloužení řas",
+      "lashes4": "Přirozené prodloužení řas",
+      "lashesVideo1": "Proces aplikace prodloužení řas",
+      "lashesVideo2": "Krásné výsledky prodloužení řas",
       "spa1": "Terapie masáže horkými kameny",
       "spa2": "Exfoliační ošetření tělovým peelingem",
       "spa3": "Klidné spa prostředí",
       "massage1": "Švédská masáž",
       "massage2": "Hloubková masáž",
-      "video1": "Virtuální prohlídka našeho spa"
+      "video1": "Virtuální prohlídka našeho spa",
+      "pmu1": "Permanentní make-up obočí",
+      "pmu2": "Microblading obočí",
+      "pmu3": "Pudrové obočí",
+      "pmu4": "Ombré obočí",
+      "pmu5": "Přirozený permanentní make-up obočí"
     },
     "viewFullPortfolio": "Zobrazit celé portfolio"
   },

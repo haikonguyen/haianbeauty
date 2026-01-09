@@ -1,14 +1,8 @@
 "use client";
 
-import {
-  Facebook,
-  Instagram,
-  Mail,
-  MapPin,
-  Phone,
-  Twitter,
-} from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { SiFacebook, SiInstagram, SiTiktok } from "react-icons/si";
 import { SITE_CONFIG } from "@/lib/constants";
 
 export function Footer() {
@@ -26,11 +20,11 @@ export function Footer() {
             </h3>
             <div className="space-y-3">
               <div className="flex items-start gap-2">
-                <MapPin className="mt-0.5 h-5 w-5 flex-shrink-0" />
+                <MapPin className="mt-0.5 h-5 w-5 shrink-0" />
                 <span className="text-sm">{SITE_CONFIG.contact.address}</span>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="h-5 w-5 flex-shrink-0" />
+                <Phone className="h-5 w-5 shrink-0" />
                 <a
                   href={`tel:${SITE_CONFIG.contact.phone}`}
                   className="text-sm transition-colors hover:text-spa-gold"
@@ -39,7 +33,7 @@ export function Footer() {
                 </a>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="h-5 w-5 flex-shrink-0" />
+                <Mail className="h-5 w-5 shrink-0" />
                 <a
                   href={`mailto:${SITE_CONFIG.contact.email}`}
                   className="text-sm transition-colors hover:text-spa-gold"
@@ -84,7 +78,7 @@ export function Footer() {
                 className="rounded-full bg-spa-cream/10 p-2 transition-colors hover:bg-spa-gold"
                 aria-label="Facebook"
               >
-                <Facebook className="h-5 w-5" />
+                <SiFacebook className="h-5 w-5" />
               </a>
               <a
                 href={SITE_CONFIG.social.instagram}
@@ -93,16 +87,16 @@ export function Footer() {
                 className="rounded-full bg-spa-cream/10 p-2 transition-colors hover:bg-spa-gold"
                 aria-label="Instagram"
               >
-                <Instagram className="h-5 w-5" />
+                <SiInstagram className="h-5 w-5" />
               </a>
               <a
-                href={SITE_CONFIG.social.twitter}
+                href={SITE_CONFIG.social.tiktok}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full bg-spa-cream/10 p-2 transition-colors hover:bg-spa-gold"
-                aria-label="Twitter"
+                aria-label="TikTok"
               >
-                <Twitter className="h-5 w-5" />
+                <SiTiktok className="h-5 w-5" />
               </a>
             </div>
           </div>

@@ -29,17 +29,26 @@ export function GalleryLightbox({
   // Convert gallery items to lightbox slides
   const slides = items.map((item) => {
     if (item.type === "video") {
+      // Use external URL for test video, otherwise use ImageKit
+      const videoUrl = item.path.startsWith("test/")
+        ? "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        : `https://ik.imagekit.io/8qy7obkhf/${item.path}`;
+
+      const posterUrl = item.path.startsWith("test/")
+        ? "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg"
+        : item.thumbnailPath
+          ? getLightboxImageUrl(item.thumbnailPath)
+          : `https://ik.imagekit.io/8qy7obkhf/${item.path}/ik-thumbnail.jpg`;
+
       return {
         type: "video" as const,
         sources: [
           {
-            src: getLightboxImageUrl(item.path),
+            src: videoUrl,
             type: "video/mp4",
           },
         ],
-        poster: item.thumbnailPath
-          ? getLightboxImageUrl(item.thumbnailPath)
-          : undefined,
+        poster: posterUrl,
       };
     }
 
