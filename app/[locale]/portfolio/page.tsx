@@ -21,9 +21,10 @@ export default function GalleryPage() {
   const itemCounts: Record<GalleryCategory, number> = {
     all: GALLERY_ITEMS.length,
     nails: getGalleryItemsByCategory("nails").length,
-    beauty: getGalleryItemsByCategory("beauty").length,
+    lashes: getGalleryItemsByCategory("lashes").length,
     spa: getGalleryItemsByCategory("spa").length,
     massage: getGalleryItemsByCategory("massage").length,
+    pmu: getGalleryItemsByCategory("pmu").length,
   };
 
   return (

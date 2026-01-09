@@ -18,9 +18,15 @@ interface GalleryItemProps {
 export function GalleryItemComponent({ item, onClick }: GalleryItemProps) {
   const [isLoaded, setIsLoaded] = useState(false);
 
+  // For videos, use ImageKit's video thumbnail feature
+  // ImageKit can extract a thumbnail from video by using ik-thumbnail.jpg
   const imageSrc =
-    item.type === "video" && item.thumbnailPath
-      ? getVideoThumbnail(item.thumbnailPath)
+    item.type === "video"
+      ? item.path.startsWith("test/")
+        ? "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg"
+        : item.thumbnailPath
+          ? getVideoThumbnail(item.thumbnailPath)
+          : `https://ik.imagekit.io/8qy7obkhf/${item.path}/ik-thumbnail.jpg`
       : getGalleryImageUrl(item.path);
 
   const placeholder = getImageKitPlaceholder(

@@ -8,7 +8,7 @@ export function Hero() {
   const t = useTranslations("hero");
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center bg-gradient-to-br from-spa-cream via-white to-spa-pink/20">
+    <section className="relative flex min-h-screen items-center justify-center bg-linear-to-br from-spa-cream via-white to-spa-pink/20">
       {/* Background Image */}
       <div className="absolute inset-0 opacity-60">
         <div
@@ -54,11 +54,11 @@ export function Hero() {
             </Button>
           </div>
         </div>
+      </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <ChevronDown className="h-8 w-8 text-forest-green" />
-        </div>
+      {/* Scroll Indicator - positioned at the bottom of a hero section */}
+      <div className="absolute bottom-8 left-1/2 z-20 -translate-x-1/2 animate-bounce">
+        <ChevronDown className="h-8 w-8 text-forest-green" />
       </div>
     </section>
   );

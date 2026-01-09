@@ -116,9 +116,10 @@
     "filters": {
       "all": "Tất cả",
       "nails": "Móng",
-      "beauty": "Làm đẹp",
+      "lashes": "Nối mi",
       "spa": "Spa",
-      "massage": "Massage"
+      "massage": "Massage",
+      "pmu": "PMU"
     },
     "lightbox": {
       "previous": "Ảnh trước",
@@ -131,15 +132,23 @@
       "nails2": "Manicure kiểu Pháp cổ điển",
       "nails3": "Thiết kế nail art sáng tạo",
       "nails4": "Pedicure cao cấp với liệu trình spa",
-      "beauty1": "Liệu trình chăm sóc da mặt thư giãn",
-      "beauty2": "Chăm sóc da chống lão hóa với liệu pháp LED",
-      "beauty3": "Sản phẩm chăm sóc da cao cấp",
+      "lashes1": "Nối mi đẹp",
+      "lashes2": "Nối mi dày",
+      "lashes3": "Nối mi cổ điển",
+      "lashes4": "Nối mi tự nhiên",
+      "lashesVideo1": "Quy trình nối mi",
+      "lashesVideo2": "Kết quả nối mi đẹp",
       "spa1": "Liệu pháp massage đá nóng",
       "spa2": "Liệu trình tẩy tế bào chết toàn thân",
       "spa3": "Môi trường spa yên bình",
-      "massage1": "Buổi massage Thụy Điển",
-      "massage2": "Liệu pháp massage mô sâu",
-      "video1": "Tour ảo cơ sở spa của chúng tôi"
+      "massage1": "Massage Thụy Điển",
+      "massage2": "Massage mô sâu",
+      "video1": "Tham quan ảo spa của chúng tôi",
+      "pmu1": "Phun xăm lông mày",
+      "pmu2": "Phun mày microblading",
+      "pmu3": "Phun mày dạng bột",
+      "pmu4": "Phun mày ombré",
+      "pmu5": "Phun xăm lông mày tự nhiên"
     },
     "viewFullPortfolio": "Xem toàn bộ tác phẩm"
   },

@@ -23,6 +23,18 @@ export function Header() {
     { name: t("contact"), href: "/#contact", useLink: false },
   ];
 
+  const handleContactClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const href = e.currentTarget.getAttribute("href");
+    if (href === "/#contact") {
+      e.preventDefault();
+      window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: "smooth",
+      });
+      setMobileMenuOpen(false);
+    }
+  };
+
   return (
     <header className="fixed top-0 right-0 left-0 z-50 border-border border-b bg-background/80 backdrop-blur-md">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -57,6 +69,7 @@ export function Header() {
                   key={item.name}
                   href={item.href}
                   className="font-medium text-foreground/80 text-sm transition-colors hover:text-forest-green"
+                  onClick={handleContactClick}
                 >
                   {item.name}
                 </a>
@@ -114,7 +127,7 @@ export function Header() {
                     key={item.name}
                     href={item.href}
                     className="block rounded-md px-3 py-2 font-medium text-base text-foreground/80 transition-colors hover:bg-accent hover:text-forest-green"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={handleContactClick}
                   >
                     {item.name}
                   </a>

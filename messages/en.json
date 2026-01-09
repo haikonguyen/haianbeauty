@@ -116,9 +116,10 @@
     "filters": {
       "all": "All",
       "nails": "Nails",
-      "beauty": "Beauty",
+      "lashes": "Lashes",
       "spa": "Spa",
-      "massage": "Massage"
+      "massage": "Massage",
+      "pmu": "PMU"
     },
     "lightbox": {
       "previous": "Previous image",
@@ -131,15 +132,23 @@
       "nails2": "Classic French manicure",
       "nails3": "Creative nail art design",
       "nails4": "Luxury pedicure with spa treatment",
-      "beauty1": "Relaxing facial treatment",
-      "beauty2": "Anti-aging facial with LED therapy",
-      "beauty3": "Premium skincare products",
+      "lashes1": "Beautiful lash extensions",
+      "lashes2": "Volume lash extensions",
+      "lashes3": "Classic lash extensions",
+      "lashes4": "Natural lash extensions",
+      "lashesVideo1": "Lash extension application process",
+      "lashesVideo2": "Beautiful lash extension results",
       "spa1": "Hot stone massage therapy",
       "spa2": "Exfoliating body scrub treatment",
       "spa3": "Tranquil spa environment",
       "massage1": "Swedish massage session",
       "massage2": "Deep tissue massage therapy",
-      "video1": "Virtual tour of our spa facilities"
+      "video1": "Virtual tour of our spa facilities",
+      "pmu1": "Permanent makeup eyebrows",
+      "pmu2": "Microblading eyebrows",
+      "pmu3": "Powder brows permanent makeup",
+      "pmu4": "Ombre eyebrows",
+      "pmu5": "Natural eyebrow permanent makeup"
     },
     "viewFullPortfolio": "View Full Portfolio"
   },

@@ -1,4 +1,10 @@
-export type GalleryCategory = "all" | "nails" | "beauty" | "spa" | "massage";
+export type GalleryCategory =
+  | "all"
+  | "nails"
+  | "lashes"
+  | "spa"
+  | "massage"
+  | "pmu";
 
 export type MediaType = "image" | "video";
 
