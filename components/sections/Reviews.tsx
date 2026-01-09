@@ -2,7 +2,7 @@
 
 import { ExternalLink, Star } from "lucide-react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useReviews } from "@/features/reviews/hooks/useReviews";
@@ -64,7 +64,8 @@ function ReviewCard({ review }: { review: GoogleReview }) {
 
 export function Reviews() {
   const t = useTranslations("reviews");
-  const { data, loading } = useReviews();
+  const locale = useLocale();
+  const { data, loading } = useReviews(locale);
 
   if (loading) {
     return (

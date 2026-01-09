@@ -1,8 +1,10 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import { FALLBACK_REVIEWS } from "../data/reviews";
 import type { GooglePlaceDetails } from "../types";
 
-export function useReviews() {
+export function useReviews(locale: string = "en") {
   const [data, setData] = useState<GooglePlaceDetails | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -10,7 +12,7 @@ export function useReviews() {
   useEffect(() => {
     async function fetchReviews() {
       try {
-        const response = await fetch("/api/reviews");
+        const response = await fetch(`/api/reviews?lang=${locale}`);
         const result = await response.json();
 
         if (result.success && result.data) {
@@ -40,7 +42,7 @@ export function useReviews() {
     }
 
     fetchReviews();
-  }, []);
+  }, [locale]);
 
   return { data, loading, error };
 }

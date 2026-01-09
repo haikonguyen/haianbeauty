@@ -36,7 +36,11 @@ export function Hero() {
               size="lg"
               className="animate-scale-in bg-spa-gold px-8 py-6 text-lg text-white hover:bg-spa-gold/90"
             >
-              <a href="https://anbeauty.setmore.com/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://anbeauty.setmore.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {t("bookAppointment")}
               </a>
             </Button>
