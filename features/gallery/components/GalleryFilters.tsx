@@ -20,9 +20,8 @@ export function GalleryFilters({
   const filters: GalleryFilterOption[] = [
     { value: "all", labelKey: "all" },
     { value: "nails", labelKey: "nails" },
-    { value: "beauty", labelKey: "beauty" },
-    { value: "spa", labelKey: "spa" },
-    { value: "massage", labelKey: "massage" },
+    { value: "lashes", labelKey: "lashes" },
+    { value: "pmu", labelKey: "pmu" },
   ];
 
   return (
