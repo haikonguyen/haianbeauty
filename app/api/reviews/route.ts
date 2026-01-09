@@ -7,13 +7,17 @@ import type {
 const GOOGLE_PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY;
 const GOOGLE_PLACE_ID = process.env.GOOGLE_PLACE_ID;
 
-// Cache configuration
-let cachedReviews: GooglePlaceDetails | null = null;
-let cacheTimestamp = 0;
+// Cache configuration - separate cache per language
+const cachedReviews: Record<string, GooglePlaceDetails | null> = {};
+const cacheTimestamps: Record<string, number> = {};
 const CACHE_DURATION = 1000 * 60 * 60 * 24; // 24 hours
 
-export async function GET() {
+export async function GET(request: Request) {
   try {
+    // Extract language from query params
+    const { searchParams } = new URL(request.url);
+    const lang = searchParams.get("lang") || "en";
+
     // Validate environment variables
     if (!GOOGLE_PLACES_API_KEY || !GOOGLE_PLACE_ID) {
       return NextResponse.json<ReviewsResponse>(
@@ -25,12 +29,16 @@ export async function GET() {
       );
     }
 
-    // Return cached data if still valid
+    // Return cached data if still valid for this language
     const now = Date.now();
-    if (cachedReviews && now - cacheTimestamp < CACHE_DURATION) {
+    if (
+      cachedReviews[lang] &&
+      cacheTimestamps[lang] &&
+      now - cacheTimestamps[lang] < CACHE_DURATION
+    ) {
       return NextResponse.json<ReviewsResponse>({
         success: true,
-        data: cachedReviews,
+        data: cachedReviews[lang],
       });
     }
 
@@ -47,6 +55,7 @@ export async function GET() {
         "Content-Type": "application/json",
         "X-Goog-Api-Key": GOOGLE_PLACES_API_KEY,
         "X-Goog-FieldMask": fields,
+        "Accept-Language": lang,
       },
     });
 
@@ -64,9 +73,9 @@ export async function GET() {
 
     const data: GooglePlaceDetails = await response.json();
 
-    // Cache the successful response
-    cachedReviews = data;
-    cacheTimestamp = now;
+    // Cache the successful response for this language
+    cachedReviews[lang] = data;
+    cacheTimestamps[lang] = now;
 
     return NextResponse.json<ReviewsResponse>({
       success: true,
