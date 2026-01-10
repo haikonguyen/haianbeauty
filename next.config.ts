@@ -20,6 +20,8 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // Allow local network access during development
+  allowedDevOrigins: ["http://192.168.0.189:3000", "http://192.168.0.189:3001"],
 };
 
 export default withNextIntl(nextConfig);

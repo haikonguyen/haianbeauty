@@ -16,7 +16,7 @@ export const SITE_CONFIG = {
   },
   hours: {
     weekday: "9:00 AM - 7:00 PM",
-    saturday: "10:00 AM - 7:00 PM",
+    saturday: "10:00 AM - 6:00 PM",
     sunday: "Closed",
   },
 } as const;

@@ -32,7 +32,7 @@ export function Services() {
           {SERVICES.map((service, index) => (
             <Card
               key={service.id}
-              className="group border-spa-cream/50 transition-all duration-300 hover:-translate-y-1 hover:border-sage-green/50 hover:shadow-xl"
+              className="group flex h-full flex-col border-spa-cream/50 transition-all duration-300 hover:-translate-y-1 hover:border-sage-green/50 hover:shadow-xl"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardHeader>
@@ -50,7 +50,7 @@ export function Services() {
                 </CardDescription>
               </CardHeader>
 
-              <CardContent>
+              <CardContent className="min-h-[80px] flex-1">
                 {service.features && (
                   <ul className="space-y-2">
                     {service.features.slice(0, 3).map((_feature, idx) => (
@@ -66,7 +66,7 @@ export function Services() {
                 )}
               </CardContent>
 
-              <CardFooter className="flex items-center justify-between border-t pt-4">
+              <CardFooter className="flex min-h-[80px] items-center justify-between border-t pt-4">
                 <div className="flex flex-col gap-1">
                   <div className="flex items-center text-charcoal/70 text-sm">
                     <Clock className="mr-1 h-4 w-4" />
