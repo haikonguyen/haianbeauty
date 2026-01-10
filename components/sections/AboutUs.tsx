@@ -63,7 +63,7 @@ export function AboutUs() {
         <div className="mb-16 grid gap-12 lg:grid-cols-2">
           {/* Story */}
           <div className="animate-fade-in">
-            <div className="h-full rounded-2xl border border-spa-cream/50 bg-gradient-to-br from-spa-cream/20 to-spa-pink/10 p-8 shadow-lg backdrop-blur-sm transition-all duration-300 hover:shadow-xl">
+            <div className="h-full rounded-2xl border border-spa-cream/50 bg-linear-to-br from-spa-cream/20 to-spa-pink/10 p-8 shadow-lg backdrop-blur-sm transition-all duration-300 hover:shadow-xl">
               <div className="mb-4 flex items-center gap-3">
                 <div className="rounded-full bg-spa-gold/10 p-3">
                   <Heart className="h-6 w-6 text-spa-gold" />
@@ -78,7 +78,7 @@ export function AboutUs() {
 
           {/* Mission */}
           <div className="animate-fade-in" style={{ animationDelay: "100ms" }}>
-            <div className="h-full rounded-2xl border border-sage-green/30 bg-gradient-to-br from-sage-green/10 to-deep-teal/5 p-8 shadow-lg backdrop-blur-sm transition-all duration-300 hover:shadow-xl">
+            <div className="h-full rounded-2xl border border-sage-green/30 bg-linear-to-br from-sage-green/10 to-deep-teal/5 p-8 shadow-lg backdrop-blur-sm transition-all duration-300 hover:shadow-xl">
               <div className="mb-4 flex items-center gap-3">
                 <div className="rounded-full bg-sage-green/10 p-3">
                   <Sparkles className="h-6 w-6 text-sage-green" />
@@ -106,7 +106,7 @@ export function AboutUs() {
                   className="group animate-scale-in rounded-xl border border-spa-cream/50 bg-white p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-2 hover:border-sage-green/50 hover:shadow-xl"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-spa-gold/20 to-sage-green/20 transition-transform duration-300 group-hover:scale-110">
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-linear-to-br from-spa-gold/20 to-sage-green/20 transition-transform duration-300 group-hover:scale-110">
                     <Icon className="h-8 w-8 text-forest-green" />
                   </div>
                   <h4 className="mb-2 font-semibold text-forest-green text-lg">
@@ -122,7 +122,7 @@ export function AboutUs() {
         </div>
 
         {/* Stats */}
-        <div className="animate-fade-in rounded-2xl bg-gradient-to-r from-forest-green via-deep-teal to-forest-green p-12 text-white shadow-2xl">
+        <div className="animate-fade-in rounded-2xl bg-linear-to-r from-forest-green via-deep-teal to-forest-green p-12 text-white shadow-2xl">
           <div className="grid gap-8 sm:grid-cols-3">
             {stats.map((stat, index) => (
               <div
