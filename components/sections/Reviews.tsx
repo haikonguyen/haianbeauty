@@ -97,18 +97,15 @@ export function Reviews() {
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {data.reviews
-            ?.filter((review) => review.rating >= 4)
-            .slice(0, 6)
-            .map((review, index) => (
-              <div
-                key={review.publishTime || `review-${index}`}
-                className="animate-slide-up"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <ReviewCard review={review} />
-              </div>
-            ))}
+          {data.reviews?.map((review, index) => (
+            <div
+              key={review.publishTime || `review-${index}`}
+              className="animate-slide-up"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <ReviewCard review={review} />
+            </div>
+          ))}
         </div>
 
         <div className="mt-12 text-center">
