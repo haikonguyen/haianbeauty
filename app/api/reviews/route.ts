@@ -36,10 +36,18 @@ export async function GET(request: Request) {
       cacheTimestamps[lang] &&
       now - cacheTimestamps[lang] < CACHE_DURATION
     ) {
-      return NextResponse.json<ReviewsResponse>({
-        success: true,
-        data: cachedReviews[lang],
-      });
+      return NextResponse.json<ReviewsResponse>(
+        {
+          success: true,
+          data: cachedReviews[lang],
+        },
+        {
+          headers: {
+            "Cache-Control":
+              "public, s-maxage=3600, stale-while-revalidate=86400",
+          },
+        },
+      );
     }
 
     // Fetch from Google Places API with language-specific translations
@@ -97,10 +105,18 @@ export async function GET(request: Request) {
     cachedReviews[lang] = data;
     cacheTimestamps[lang] = now;
 
-    return NextResponse.json<ReviewsResponse>({
-      success: true,
-      data,
-    });
+    return NextResponse.json<ReviewsResponse>(
+      {
+        success: true,
+        data,
+      },
+      {
+        headers: {
+          "Cache-Control":
+            "public, s-maxage=3600, stale-while-revalidate=86400",
+        },
+      },
+    );
   } catch (error) {
     console.error("Error fetching reviews:", error);
     return NextResponse.json<ReviewsResponse>(
