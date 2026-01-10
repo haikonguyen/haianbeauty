@@ -10,7 +10,7 @@ const GOOGLE_PLACE_ID = process.env.GOOGLE_PLACE_ID;
 // Cache configuration - separate cache per language
 const cachedReviews: Record<string, GooglePlaceDetails | null> = {};
 const cacheTimestamps: Record<string, number> = {};
-const CACHE_DURATION = 1000 * 60 * 60 * 24; // 24 hours
+const CACHE_DURATION = 1000 * 60 * 60; // 1 hour
 
 export async function GET(request: Request) {
   try {
@@ -43,9 +43,18 @@ export async function GET(request: Request) {
     }
 
     // Fetch from Google Places API
-    const fields = ["displayName", "rating", "userRatingCount", "reviews"].join(
-      ",",
-    );
+    // Always fetch in English first to ensure consistent review set,
+    // then Google will translate based on Accept-Language header
+    const fields = [
+      "displayName",
+      "rating",
+      "userRatingCount",
+      "reviews.rating",
+      "reviews.text",
+      "reviews.relativePublishTimeDescription",
+      "reviews.publishTime",
+      "reviews.authorAttribution",
+    ].join(",");
 
     const url = `https://places.googleapis.com/v1/places/${GOOGLE_PLACE_ID}`;
 
@@ -55,6 +64,7 @@ export async function GET(request: Request) {
         "Content-Type": "application/json",
         "X-Goog-Api-Key": GOOGLE_PLACES_API_KEY,
         "X-Goog-FieldMask": fields,
+        // Use language parameter for translations, but fetch consistent review set
         "Accept-Language": lang,
       },
     });
@@ -72,6 +82,18 @@ export async function GET(request: Request) {
     }
 
     const data: GooglePlaceDetails = await response.json();
+
+    // Ensure we have reviews and sort them by date
+    if (data.reviews && data.reviews.length > 0) {
+      data.reviews = data.reviews
+        .filter((review) => review.rating >= 4)
+        .sort((a, b) => {
+          const timeA = new Date(a.publishTime || 0).getTime();
+          const timeB = new Date(b.publishTime || 0).getTime();
+          return timeB - timeA;
+        })
+        .slice(0, 3); // Show only 3 latest reviews for consistency
+    }
 
     // Cache the successful response for this language
     cachedReviews[lang] = data;

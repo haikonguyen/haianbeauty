@@ -8,7 +8,7 @@
     "bookNow": "Đặt lịch"
   },
   "hero": {
-    "title": "Thiên đường của",
+    "title": "Điểm đến hàng đầu cho",
     "titleHighlight": "Sắc đẹp & Sức khỏe",
     "subtitle": "Trải nghiệm các liệu trình spa cao cấp, chăm sóc móng chuyên nghiệp và dịch vụ làm đẹp trẻ hóa trong không gian yên bình",
     "bookAppointment": "Đặt lịch hẹn",
@@ -151,6 +151,38 @@
       "pmu5": "Phun xăm lông mày tự nhiên"
     },
     "viewFullPortfolio": "Xem toàn bộ tác phẩm"
+  },
+  "about": {
+    "title": "Về HaiAn Beauty & Spa",
+    "subtitle": "Đối tác tin cậy của bạn về sắc đẹp và sức khỏe",
+    "storyTitle": "Câu chuyện của chúng tôi",
+    "story": "Được thành lập với niềm đam mê về sắc đẹp và sức khỏe, HaiAn Beauty & Spa đã trở thành điểm đến hàng đầu nơi các kỹ thuật truyền thống kết hợp với sự đổi mới hiện đại. Chúng tôi tin rằng mọi người đều xứng đáng cảm thấy xinh đẹp, thư giãn và tự tin.",
+    "missionTitle": "Sứ mệnh của chúng tôi",
+    "mission": "Sứ mệnh của chúng tôi là cung cấp các dịch vụ làm đẹp và chăm sóc sức khỏe đặc biệt trong một môi trường yên bình, thân thiện, giúp khách hàng của chúng tôi trông đẹp nhất và cảm thấy tốt nhất.",
+    "values": {
+      "title": "Giá trị cốt lõi",
+      "excellence": {
+        "title": "Xuất sắc",
+        "description": "Chúng tôi duy trì các tiêu chuẩn cao nhất trong mọi dịch vụ"
+      },
+      "expertise": {
+        "title": "Chuyên môn",
+        "description": "Đội ngũ của chúng tôi bao gồm các chuyên gia được chứng nhận với nhiều năm kinh nghiệm"
+      },
+      "care": {
+        "title": "Chăm sóc cá nhân",
+        "description": "Mỗi khách hàng đều nhận được sự chăm sóc cá nhân và liệu trình phù hợp"
+      },
+      "serenity": {
+        "title": "Thanh thản",
+        "description": "Chúng tôi tạo ra bầu không khí yên bình để thư giãn hoàn toàn"
+      }
+    },
+    "stats": {
+      "experience": "Năm kinh nghiệm",
+      "services": "Dịch vụ cao cấp",
+      "clients": "Khách hàng hài lòng"
+    }
   },
   "reviews": {
     "title": "Khách hàng nói gì về chúng tôi",

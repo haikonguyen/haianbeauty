@@ -1,3 +1,4 @@
+import { AboutUs } from "@/components/sections/AboutUs";
 import { BookingCTA } from "@/components/sections/BookingCTA";
 import { FeaturedGallery } from "@/components/sections/FeaturedGallery";
 import { Hero } from "@/components/sections/Hero";
@@ -9,6 +10,7 @@ export default function Home() {
     <>
       <Hero />
       <Services />
+      <AboutUs />
       <FeaturedGallery />
       <Reviews />
       <BookingCTA />

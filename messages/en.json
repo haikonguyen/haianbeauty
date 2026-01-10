@@ -8,7 +8,7 @@
     "bookNow": "Book Now"
   },
   "hero": {
-    "title": "Your Sanctuary of",
+    "title": "Your Premier Destination for",
     "titleHighlight": "Beauty & Wellness",
     "subtitle": "Experience premium spa treatments, expert nail care, and rejuvenating beauty services in a serene atmosphere",
     "bookAppointment": "Book Appointment",
@@ -151,6 +151,38 @@
       "pmu5": "Natural eyebrow permanent makeup"
     },
     "viewFullPortfolio": "View Full Portfolio"
+  },
+  "about": {
+    "title": "About HaiAn Beauty & Spa",
+    "subtitle": "Your trusted partner in beauty and wellness",
+    "storyTitle": "Our Story",
+    "story": "Founded with a passion for beauty and wellness, HaiAn Beauty & Spa has become a premier destination where traditional techniques meet modern innovation. We believe that everyone deserves to feel beautiful, relaxed, and confident.",
+    "missionTitle": "Our Mission",
+    "mission": "Our mission is to provide exceptional beauty and wellness services in a serene, welcoming environment, helping our clients look and feel their absolute best.",
+    "values": {
+      "title": "Our Values",
+      "excellence": {
+        "title": "Excellence",
+        "description": "We maintain the highest standards in every service we provide"
+      },
+      "expertise": {
+        "title": "Expertise",
+        "description": "Our team consists of certified professionals with years of experience"
+      },
+      "care": {
+        "title": "Personal Care",
+        "description": "Every client receives personalized attention and tailored treatments"
+      },
+      "serenity": {
+        "title": "Serenity",
+        "description": "We create a peaceful atmosphere for complete relaxation"
+      }
+    },
+    "stats": {
+      "experience": "Years of Experience",
+      "services": "Premium Services",
+      "clients": "Happy Clients"
+    }
   },
   "reviews": {
     "title": "What Our Clients Say",

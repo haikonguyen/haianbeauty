@@ -23,15 +23,38 @@ export function Header() {
     { name: t("contact"), href: "/#contact", useLink: false },
   ];
 
-  const handleContactClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
     const href = e.currentTarget.getAttribute("href");
-    if (href === "/#contact") {
+
+    // Check if it's a hash link (e.g., /#about, /#services, /#contact)
+    if (href?.startsWith("/#")) {
       e.preventDefault();
-      window.scrollTo({
-        top: document.documentElement.scrollHeight,
-        behavior: "smooth",
-      });
+      const targetId = href.substring(2); // Remove "/#" to get the id
+
+      // Close mobile menu if open
       setMobileMenuOpen(false);
+
+      // Special handling for contact (scroll to bottom)
+      if (targetId === "contact") {
+        window.scrollTo({
+          top: document.documentElement.scrollHeight,
+          behavior: "smooth",
+        });
+      } else {
+        // For other sections, find the element and scroll to it
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          const headerOffset = 80; // Height of fixed header
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition =
+            elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        }
+      }
     }
   };
 
@@ -69,7 +92,7 @@ export function Header() {
                   key={item.name}
                   href={item.href}
                   className="font-medium text-foreground/80 text-sm transition-colors hover:text-forest-green"
-                  onClick={handleContactClick}
+                  onClick={handleSmoothScroll}
                 >
                   {item.name}
                 </a>
@@ -127,7 +150,7 @@ export function Header() {
                     key={item.name}
                     href={item.href}
                     className="block rounded-md px-3 py-2 font-medium text-base text-foreground/80 transition-colors hover:bg-accent hover:text-forest-green"
-                    onClick={handleContactClick}
+                    onClick={handleSmoothScroll}
                   >
                     {item.name}
                   </a>
