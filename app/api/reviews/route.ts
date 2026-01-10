@@ -42,9 +42,8 @@ export async function GET(request: Request) {
       });
     }
 
-    // Fetch from Google Places API
-    // Always fetch in English first to ensure consistent review set,
-    // then Google will translate based on Accept-Language header
+    // Fetch from Google Places API with language-specific translations
+    // Using languageCode parameter ensures reviews are translated to the requested language
     const fields = [
       "displayName",
       "rating",
@@ -56,7 +55,8 @@ export async function GET(request: Request) {
       "reviews.authorAttribution",
     ].join(",");
 
-    const url = `https://places.googleapis.com/v1/places/${GOOGLE_PLACE_ID}`;
+    // Add languageCode parameter to URL for proper translation
+    const url = `https://places.googleapis.com/v1/places/${GOOGLE_PLACE_ID}?languageCode=${lang}`;
 
     const response = await fetch(url, {
       method: "GET",
@@ -64,8 +64,6 @@ export async function GET(request: Request) {
         "Content-Type": "application/json",
         "X-Goog-Api-Key": GOOGLE_PLACES_API_KEY,
         "X-Goog-FieldMask": fields,
-        // Use language parameter for translations, but fetch consistent review set
-        "Accept-Language": lang,
       },
     });
 
