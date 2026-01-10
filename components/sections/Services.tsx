@@ -50,7 +50,7 @@ export function Services() {
                 </CardDescription>
               </CardHeader>
 
-              <CardContent className="min-h-[80px] flex-1">
+              <CardContent className="min-h-20 flex-1">
                 {service.features && (
                   <ul className="space-y-2">
                     {service.features.slice(0, 3).map((_feature, idx) => (
@@ -66,7 +66,7 @@ export function Services() {
                 )}
               </CardContent>
 
-              <CardFooter className="flex min-h-[80px] items-center justify-between border-t pt-4">
+              <CardFooter className="flex min-h-20 items-center justify-between border-t pt-4">
                 <div className="flex flex-col gap-1">
                   <div className="flex items-center text-charcoal/70 text-sm">
                     <Clock className="mr-1 h-4 w-4" />
