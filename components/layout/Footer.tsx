@@ -60,7 +60,7 @@ export function Footer() {
               </div>
               <div className="flex justify-between">
                 <span>{t("sunday")}</span>
-                <span>{SITE_CONFIG.hours.sunday}</span>
+                <span>{t("closed")}</span>
               </div>
             </div>
           </div>

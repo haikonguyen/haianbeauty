@@ -200,6 +200,7 @@
     "weekday": "Monday - Friday",
     "saturday": "Saturday",
     "sunday": "Sunday",
+    "closed": "Closed",
     "rights": "All rights reserved"
   }
 }
