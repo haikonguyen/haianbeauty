@@ -27,7 +27,7 @@ export function GalleryGrid({ items, isLoading = false }: GalleryGridProps) {
 
   if (items.length === 0) {
     return (
-      <div className="flex min-h-[400px] items-center justify-center">
+      <div className="flex min-h-100 items-center justify-center">
         <p className="text-lg text-muted-foreground">
           No gallery items found in this category.
         </p>
