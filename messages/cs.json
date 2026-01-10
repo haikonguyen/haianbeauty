@@ -8,7 +8,7 @@
     "bookNow": "Rezervovat"
   },
   "hero": {
-    "title": "Vaše oáza",
+    "title": "Vaše prémiová destinace pro",
     "titleHighlight": "Krásy & Wellness",
     "subtitle": "Zažijte prémiové spa procedury, odbornou péči o nehty a omlazující kosmetické služby v klidné atmosféře",
     "bookAppointment": "Rezervovat termín",
@@ -151,6 +151,38 @@
       "pmu5": "Přirozený permanentní make-up obočí"
     },
     "viewFullPortfolio": "Zobrazit celé portfolio"
+  },
+  "about": {
+    "title": "O HaiAn Beauty & Spa",
+    "subtitle": "Váš důvěryhodný partner v oblasti krásy a wellness",
+    "storyTitle": "Náš příběh",
+    "story": "HaiAn Beauty & Spa bylo založeno s vášní pro krásu a wellness a stalo se prémiovou destinací, kde se tradiční techniky setkávají s moderními inovacemi. Věříme, že každý si zaslouží cítit se krásně, uvolněně a sebevědomě.",
+    "missionTitle": "Naše mise",
+    "mission": "Naším posláním je poskytovat výjimečné kosmetické a wellness služby v klidném a příjemném prostředí a pomáhat našim klientům vypadat a cítit se co nejlépe.",
+    "values": {
+      "title": "Naše hodnoty",
+      "excellence": {
+        "title": "Dokonalost",
+        "description": "Udržujeme nejvyšší standardy v každé službě, kterou poskytujeme"
+      },
+      "expertise": {
+        "title": "Odbornost",
+        "description": "Náš tým se skládá z certifikovaných profesionálů s mnohaletými zkušenostmi"
+      },
+      "care": {
+        "title": "Osobní péče",
+        "description": "Každý klient dostává individuální pozornost a ošetření na míru"
+      },
+      "serenity": {
+        "title": "Klid",
+        "description": "Vytváříme klidnou atmosféru pro úplnou relaxaci"
+      }
+    },
+    "stats": {
+      "experience": "Let zkušeností",
+      "services": "Prémiových služeb",
+      "clients": "Spokojených klientů"
+    }
   },
   "reviews": {
     "title": "Co říkají naši klienti",
