@@ -30,7 +30,8 @@ export function LanguageSwitcher() {
 
   const handleLanguageChange = (newLocale: string) => {
     setOpen(false);
-    router.replace(pathname, { locale: newLocale });
+    // Cast needed because next-intl types don't include dynamic route patterns like /blog/[slug]
+    router.replace(pathname as "/", { locale: newLocale });
   };
 
   const currentLanguage = languages.find((lang) => lang.code === currentLocale);
