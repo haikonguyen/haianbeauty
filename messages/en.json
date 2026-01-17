@@ -3,6 +3,7 @@
     "home": "Home",
     "services": "Services",
     "gallery": "Portfolio",
+    "blog": "Blog",
     "about": "About",
     "contact": "Contact",
     "bookNow": "Book Now"
@@ -192,6 +193,27 @@
     "writeReview": "Write a Review",
     "readMore": "Read more",
     "showLess": "Show less"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Tips, stories, and news from the world of beauty",
+    "readMore": "Read more",
+    "readingTime": "{minutes} min read",
+    "publishedOn": "Published {date}",
+    "categories": {
+      "all": "All",
+      "customer-stories": "Customer Stories",
+      "beauty-tips": "Beauty Tips",
+      "promotions": "Promotions",
+      "behind-the-scenes": "Behind the Scenes",
+      "news": "News"
+    },
+    "share": "Share",
+    "linkCopied": "Link copied!",
+    "relatedPosts": "Related posts",
+    "comments": "Comments",
+    "availableIn": "Available in",
+    "originalLanguage": "Original language: {language}"
   },
   "footer": {
     "contactUs": "Contact Us",

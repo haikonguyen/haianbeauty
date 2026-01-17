@@ -13,12 +13,17 @@ export function Header() {
   const t = useTranslations("nav");
 
   const navigation: Array<
-    | { name: string; href: "/" | "/portfolio" | "/booking"; useLink: true }
+    | {
+        name: string;
+        href: "/" | "/portfolio" | "/booking" | "/blog";
+        useLink: true;
+      }
     | { name: string; href: string; useLink: false }
   > = [
     { name: t("home"), href: "/" as const, useLink: true },
     { name: t("services"), href: "/#services", useLink: false },
     { name: t("gallery"), href: "/portfolio" as const, useLink: true },
+    // { name: t("blog"), href: "/blog" as const, useLink: true }, // Hidden until content is ready
     { name: t("about"), href: "/#about", useLink: false },
     { name: t("contact"), href: "/#contact", useLink: false },
   ];

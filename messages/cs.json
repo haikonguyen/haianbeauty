@@ -3,6 +3,7 @@
     "home": "Domů",
     "services": "Služby",
     "gallery": "Portfolio",
+    "blog": "Blog",
     "about": "O nás",
     "contact": "Kontakt",
     "bookNow": "Rezervovat"
@@ -192,6 +193,27 @@
     "writeReview": "Napsat recenzi",
     "readMore": "Číst více",
     "showLess": "Zobrazit méně"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Tipy, příběhy a novinky ze světa krásy",
+    "readMore": "Číst více",
+    "readingTime": "{minutes} min čtení",
+    "publishedOn": "Publikováno {date}",
+    "categories": {
+      "all": "Vše",
+      "customer-stories": "Příběhy zákazníků",
+      "beauty-tips": "Tipy pro krásu",
+      "promotions": "Akce",
+      "behind-the-scenes": "Zákulisí",
+      "news": "Novinky"
+    },
+    "share": "Sdílet",
+    "linkCopied": "Odkaz zkopírován!",
+    "relatedPosts": "Související články",
+    "comments": "Komentáře",
+    "availableIn": "Dostupné v",
+    "originalLanguage": "Originální jazyk: {language}"
   },
   "footer": {
     "contactUs": "Kontaktujte nás",
