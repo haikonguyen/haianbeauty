@@ -9,7 +9,7 @@ export const SITE_CONFIG = {
     address: "Jaromírova 686/41, 120 00 Vinohrady",
   },
   social: {
-    facebook: "https://www.facebook.com/profile.php?id=61581609553047",
+    facebook: "https://www.facebook.com/haianbeautycz",
     instagram:
       "https://www.instagram.com/anbeautyjaromirova41/?igsh=MWYyb3ZtY3Q3MjV2OQ%3D%3D&utm_source=qr#",
     tiktok: "https://www.tiktok.com/@anbeautyjaromirov?_t=ZN-90bE5IM4u3e&_r=1",

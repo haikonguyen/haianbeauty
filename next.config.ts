@@ -16,6 +16,10 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "www.notion.so",
+      },
+      {
+        protocol: "https",
         hostname: "commondatastorage.googleapis.com",
       },
     ],
