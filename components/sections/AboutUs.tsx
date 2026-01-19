@@ -1,10 +1,8 @@
-"use client";
-
 import { Award, Heart, Sparkles, Users } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export function AboutUs() {
-  const t = useTranslations("about");
+export async function AboutUs() {
+  const t = await getTranslations("about");
 
   const values = [
     {

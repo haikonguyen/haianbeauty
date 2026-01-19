@@ -1,11 +1,9 @@
-"use client";
-
 import { ChevronDown } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 
-export function Hero() {
-  const t = useTranslations("hero");
+export async function Hero() {
+  const t = await getTranslations("hero");
 
   return (
     <section className="relative flex min-h-screen items-center justify-center bg-linear-to-br from-spa-cream via-white to-spa-pink/20">

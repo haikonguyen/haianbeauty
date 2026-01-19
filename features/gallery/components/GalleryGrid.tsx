@@ -19,6 +19,7 @@ export function GalleryGrid({ items, isLoading = false }: GalleryGridProps) {
     return (
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {Array.from({ length: 9 }).map((_, i) => (
+          // biome-ignore lint/suspicious/noArrayIndexKey: Skeletons are static
           <Skeleton key={`skeleton-${i}`} className="aspect-square w-full" />
         ))}
       </div>

@@ -157,6 +157,7 @@ function CarouselItem({ className, ...props }: React.ComponentProps<"div">) {
 
   return (
     <div
+      // biome-ignore lint/a11y/useSemanticElements: Carousel pattern uses role="group"
       role="group"
       aria-roledescription="slide"
       data-slot="carousel-item"
