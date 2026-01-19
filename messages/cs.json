@@ -21,9 +21,11 @@
     "categories": {
       "nails": "Nehty",
       "spa": "Spa",
-      "beauty": "Kosmetika",
+      "beauty": "Kosmetika & Řasy",
       "massage": "Masáže",
-      "laser": "Laserová epilace"
+      "laser": "Laserová epilace",
+      "skincare": "Péče o pleť",
+      "lifting-lamination": "Lifting & Laminace"
     },
     "items": {
       "manicure-shellac": {
@@ -91,6 +93,19 @@
     "price": "Cena",
     "bookNow": "Rezervovat",
     "viewAllServices": "Zobrazit všechny služby",
+    "filterByCategory": "Filtrovat podle kategorie",
+    "allServices": "Všechny služby",
+    "loading": "Načítání služeb...",
+    "noServices": "V této kategorii nebyly nalezeny žádné služby",
+    "professionalService": "Profesionální služba",
+    "helpTitle": "Potřebujete pomoc s výběrem?",
+    "helpText": "Nejste si jisti, která služba je pro vás ta pravá? Kontaktujte nás a náš odborný tým vám pomůže vybrat perfektní ošetření.",
+    "callUs": "Zavolejte nám",
+    "emailUs": "Napište nám",
+    "searchPlaceholder": "Hledat služby...",
+    "totalServices": "Celkem služeb",
+    "noSearchResults": "Žádné služby odpovídající vašemu hledání",
+    "clearSearch": "Vymazat hledání",
     "common": {
       "min": "min"
     }

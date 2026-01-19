@@ -1,6 +1,6 @@
 "use client";
 
-import { Calendar, ExternalLink } from "lucide-react";
+import { Calendar } from "lucide-react";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { Suspense } from "react";
@@ -12,6 +12,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { CalcomEmbed } from "@/features/booking/components/CalcomEmbed";
 import { getCalcomUrl } from "@/features/booking/utils/calcom";
 import { SERVICES } from "@/features/services/data/services";
 
@@ -39,45 +40,51 @@ function BookingContent() {
         </div>
 
         {selectedService ? (
-          <Card className="mb-8 animate-slide-up border-sage-green/30">
-            <CardHeader>
-              <CardTitle className="text-2xl text-forest-green">
-                {tServices(`items.${selectedService.id}.name`)}
-              </CardTitle>
-              <CardDescription className="text-base">
-                {tServices(`items.${selectedService.id}.description`)}
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
-                <div className="space-y-1">
-                  <p className="text-charcoal/70 text-sm">
-                    {tServices("duration")}: {selectedService.duration}{" "}
-                    {tServices("common.min")}
-                  </p>
-                  <p className="font-semibold text-forest-green text-lg">
-                    {tServices("price")}: {selectedService.price}
-                  </p>
+          <div className="mb-8 space-y-6">
+            <Card className="animate-slide-up border-sage-green/30">
+              <CardHeader>
+                <CardTitle className="text-2xl text-forest-green">
+                  {tServices(`items.${selectedService.id}.name`)}
+                </CardTitle>
+                <CardDescription className="text-base">
+                  {tServices(`items.${selectedService.id}.description`)}
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
+                  <div className="space-y-1">
+                    <p className="text-charcoal/70 text-sm">
+                      {tServices("duration")}: {selectedService.duration}{" "}
+                      {tServices("common.min")}
+                    </p>
+                    <p className="font-semibold text-forest-green text-lg">
+                      {tServices("price")}: {selectedService.price}
+                    </p>
+                  </div>
                 </div>
-                <Button
-                  asChild
-                  className="bg-spa-gold text-white hover:bg-spa-gold/90"
-                >
-                  <a
-                    href={getCalcomUrl(
-                      selectedService.calcomEventType || selectedService.id,
-                    )}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2"
-                  >
-                    {t("bookThisService")}
-                    <ExternalLink className="h-4 w-4" />
-                  </a>
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+
+            {/* Cal.com Embed Widget */}
+            <Card className="animate-slide-up border-sage-green/30">
+              <CardHeader>
+                <CardTitle className="text-xl text-forest-green">
+                  {t("title")}
+                </CardTitle>
+                <CardDescription>
+                  Select your preferred date and time below
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="p-0">
+                <CalcomEmbed
+                  eventSlug={
+                    selectedService.calcomEventType || selectedService.id
+                  }
+                  className="min-h-[600px] w-full"
+                />
+              </CardContent>
+            </Card>
+          </div>
         ) : null}
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -108,15 +115,7 @@ function BookingContent() {
                   asChild
                   className="w-full bg-spa-gold text-white hover:bg-spa-gold/90"
                 >
-                  <a
-                    href={getCalcomUrl(service.calcomEventType || service.id)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2"
-                  >
-                    {t("bookNow")}
-                    <ExternalLink className="h-4 w-4" />
-                  </a>
+                  <a href={`?service=${service.id}`}>{t("bookNow")}</a>
                 </Button>
               </CardContent>
             </Card>

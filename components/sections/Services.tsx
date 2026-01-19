@@ -11,7 +11,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { CalComPopupButton } from "@/features/booking/components/CalComPopupButton";
 import { SERVICES } from "@/features/services/data/services";
+import { Link } from "@/i18n/routing";
 
 export function Services() {
   const t = useTranslations("services");
@@ -32,7 +34,7 @@ export function Services() {
           {SERVICES.map((service, index) => (
             <Card
               key={service.id}
-              className="group flex h-full flex-col border-spa-cream/50 transition-all duration-300 hover:-translate-y-1 hover:border-sage-green/50 hover:shadow-xl"
+              className="flex h-full flex-col border-spa-cream/50 transition-all duration-300 hover:-translate-y-1 hover:border-sage-green/50 hover:shadow-xl"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardHeader>
@@ -76,21 +78,9 @@ export function Services() {
                     {service.price}
                   </div>
                 </div>
-                <Button
-                  asChild
-                  className="bg-spa-gold text-white hover:bg-spa-gold/90"
-                >
-                  <a
-                    href={
-                      service.setmoreBookingUrl ||
-                      "https://anbeauty.setmore.com/"
-                    }
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {t("bookNow")}
-                  </a>
-                </Button>
+                <CalComPopupButton
+                  eventSlug={service.calcomEventType || service.id}
+                />
               </CardFooter>
             </Card>
           ))}
@@ -103,13 +93,7 @@ export function Services() {
             variant="outline"
             className="border-sage-green text-sage-green hover:bg-sage-green hover:text-white"
           >
-            <a
-              href="https://anbeauty.setmore.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t("viewAllServices")}
-            </a>
+            <Link href="/services">{t("viewAllServices")}</Link>
           </Button>
         </div>
       </div>
