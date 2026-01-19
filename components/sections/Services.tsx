@@ -1,7 +1,5 @@
-"use client";
-
 import { Clock, Sparkles } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -13,8 +11,8 @@ import {
 } from "@/components/ui/card";
 import { SERVICES } from "@/features/services/data/services";
 
-export function Services() {
-  const t = useTranslations("services");
+export async function Services() {
+  const t = await getTranslations("services");
 
   return (
     <section id="services" className="bg-white py-20">

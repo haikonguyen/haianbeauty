@@ -1,11 +1,9 @@
-"use client";
-
 import { Calendar } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 
-export function BookingCTA() {
-  const t = useTranslations("bookingCta");
+export async function BookingCTA() {
+  const t = await getTranslations("bookingCta");
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-r from-forest-green via-deep-teal to-forest-green py-20 text-white">

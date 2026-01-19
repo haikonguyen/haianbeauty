@@ -1,63 +1,72 @@
+import type {
+  BlockObjectResponse,
+  PartialBlockObjectResponse,
+  RichTextItemResponse,
+} from "@notionhq/client/build/src/api-endpoints";
+
 /**
  * Calculate estimated reading time for blog content
  * @param content - Notion blocks or text content
  * @returns Estimated reading time in minutes
  */
-export function calculateReadingTime(content: any): number {
+export function calculateReadingTime(
+  content: (PartialBlockObjectResponse | BlockObjectResponse)[] | string,
+): number {
   if (!content) return 1;
 
   let wordCount = 0;
 
-  // If content is a string, count words directly
   if (typeof content === "string") {
-    wordCount = content
-      .split(/\s+/)
-      .filter((word: string) => word.length > 0).length;
+    wordCount = countWordsInString(content);
+  } else if (Array.isArray(content)) {
+    wordCount = countWordsInBlocks(content);
   }
-  // If content is Notion blocks array
-  else if (Array.isArray(content)) {
-    for (const block of content) {
-      if (block.type === "paragraph" && block.paragraph?.rich_text) {
-        for (const text of block.paragraph.rich_text) {
-          if (text.plain_text) {
-            wordCount += text.plain_text
-              .split(/\s+/)
-              .filter((word: string) => word.length > 0).length;
-          }
-        }
-      }
-      // Add support for other block types as needed
-      else if (block.type === "heading_1" && block.heading_1?.rich_text) {
-        for (const text of block.heading_1.rich_text) {
-          if (text.plain_text) {
-            wordCount += text.plain_text
-              .split(/\s+/)
-              .filter((word: string) => word.length > 0).length;
-          }
-        }
-      } else if (block.type === "heading_2" && block.heading_2?.rich_text) {
-        for (const text of block.heading_2.rich_text) {
-          if (text.plain_text) {
-            wordCount += text.plain_text
-              .split(/\s+/)
-              .filter((word: string) => word.length > 0).length;
-          }
-        }
-      } else if (block.type === "heading_3" && block.heading_3?.rich_text) {
-        for (const text of block.heading_3.rich_text) {
-          if (text.plain_text) {
-            wordCount += text.plain_text
-              .split(/\s+/)
-              .filter((word: string) => word.length > 0).length;
-          }
+
+  // Average reading speed: 200 words per minute
+  return Math.max(1, Math.ceil(wordCount / 200));
+}
+
+function countWordsInString(text: string): number {
+  return text.split(/\s+/).filter((word) => word.length > 0).length;
+}
+
+function countWordsInBlocks(
+  blocks: (PartialBlockObjectResponse | BlockObjectResponse)[],
+): number {
+  let count = 0;
+
+  for (const block of blocks) {
+    if (!("type" in block)) continue;
+
+    const richText = getRichTextFromBlock(block);
+    if (richText) {
+      for (const text of richText) {
+        if (text.plain_text) {
+          count += countWordsInString(text.plain_text);
         }
       }
     }
   }
+  return count;
+}
 
-  // Average reading speed: 200 words per minute
-  const readingTime = Math.ceil(wordCount / 200);
-
-  // Minimum 1 minute
-  return Math.max(1, readingTime);
+function getRichTextFromBlock(
+  block: BlockObjectResponse,
+): RichTextItemResponse[] | undefined {
+  switch (block.type) {
+    case "paragraph":
+      return block.paragraph.rich_text;
+    case "heading_1":
+      return block.heading_1.rich_text;
+    case "heading_2":
+      return block.heading_2.rich_text;
+    case "heading_3":
+      return block.heading_3.rich_text;
+    case "callout":
+      return block.callout.rich_text;
+    case "quote":
+      return block.quote.rich_text;
+    default:
+      return undefined;
+  }
 }

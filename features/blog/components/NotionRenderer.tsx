@@ -1,8 +1,13 @@
 "use client";
 
+import type {
+  BlockObjectResponse,
+  PartialBlockObjectResponse,
+  RichTextItemResponse,
+} from "@notionhq/client/build/src/api-endpoints";
+
 interface NotionRendererProps {
-  // biome-ignore lint/suspicious/noExplicitAny: Notion blocks can be complex
-  content: any[];
+  content: (PartialBlockObjectResponse | BlockObjectResponse)[];
 }
 
 export function NotionRenderer({ content }: NotionRendererProps) {
@@ -19,36 +24,43 @@ export function NotionRenderer({ content }: NotionRendererProps) {
   );
 }
 
-// biome-ignore lint/suspicious/noExplicitAny: Notion blocks can be complex
-function NotionBlock({ block }: { block: any }) {
+function NotionBlock({
+  block,
+}: {
+  block: PartialBlockObjectResponse | BlockObjectResponse;
+}) {
+  if (!("type" in block)) {
+    return null;
+  }
+
   const { type } = block;
 
   switch (type) {
     case "paragraph":
       return (
         <p className="mb-4 text-foreground leading-relaxed">
-          <RichText richText={block.paragraph?.rich_text || []} />
+          <RichText richText={block.paragraph.rich_text} />
         </p>
       );
 
     case "heading_1":
       return (
         <h1 className="mt-8 mb-4 font-bold font-serif text-3xl text-foreground md:text-4xl">
-          <RichText richText={block.heading_1?.rich_text || []} />
+          <RichText richText={block.heading_1.rich_text} />
         </h1>
       );
 
     case "heading_2":
       return (
         <h2 className="mt-6 mb-3 font-bold font-serif text-2xl text-foreground md:text-3xl">
-          <RichText richText={block.heading_2?.rich_text || []} />
+          <RichText richText={block.heading_2.rich_text} />
         </h2>
       );
 
     case "heading_3":
       return (
         <h3 className="mt-4 mb-2 font-semibold font-serif text-foreground text-xl md:text-2xl">
-          <RichText richText={block.heading_3?.rich_text || []} />
+          <RichText richText={block.heading_3.rich_text} />
         </h3>
       );
 
@@ -56,7 +68,7 @@ function NotionBlock({ block }: { block: any }) {
       return (
         <ul className="mb-2 ml-6 list-disc">
           <li className="mb-1 text-foreground leading-relaxed">
-            <RichText richText={block.bulleted_list_item?.rich_text || []} />
+            <RichText richText={block.bulleted_list_item.rich_text} />
           </li>
         </ul>
       );
@@ -65,7 +77,7 @@ function NotionBlock({ block }: { block: any }) {
       return (
         <ol className="mb-2 ml-6 list-decimal">
           <li className="mb-1 text-foreground leading-relaxed">
-            <RichText richText={block.numbered_list_item?.rich_text || []} />
+            <RichText richText={block.numbered_list_item.rich_text} />
           </li>
         </ol>
       );
@@ -73,7 +85,7 @@ function NotionBlock({ block }: { block: any }) {
     case "quote":
       return (
         <blockquote className="my-6 border-primary border-l-4 bg-muted/50 py-3 pr-4 pl-6 text-foreground italic">
-          <RichText richText={block.quote?.rich_text || []} />
+          <RichText richText={block.quote.rich_text} />
         </blockquote>
       );
 
@@ -81,7 +93,7 @@ function NotionBlock({ block }: { block: any }) {
       return (
         <pre className="my-4 overflow-x-auto rounded-lg bg-muted p-4">
           <code className="text-foreground text-sm">
-            {block.code?.rich_text?.[0]?.plain_text || ""}
+            {block.code.rich_text[0]?.plain_text || ""}
           </code>
         </pre>
       );
@@ -90,14 +102,23 @@ function NotionBlock({ block }: { block: any }) {
       return <hr className="my-8 border-border" />;
 
     case "image": {
-      // biome-ignore lint/suspicious/noExplicitAny: Notion image block type
-      const imageUrl =
-        (block.image as any)?.file?.url || (block.image as any)?.external?.url;
+      const imageBlock = block as Extract<
+        BlockObjectResponse,
+        { type: "image" }
+      >;
+      let imageUrl: string | undefined;
+
+      if (imageBlock.image.type === "external") {
+        imageUrl = imageBlock.image.external.url;
+      } else if (imageBlock.image.type === "file") {
+        imageUrl = imageBlock.image.file.url;
+      }
+
       return imageUrl ? (
         <div className="my-6">
           <img
             src={imageUrl}
-            alt={block.image?.caption?.[0]?.plain_text || "Image"}
+            alt={imageBlock.image.caption?.[0]?.plain_text || "Image"}
             className="rounded-lg"
           />
         </div>
@@ -109,15 +130,14 @@ function NotionBlock({ block }: { block: any }) {
   }
 }
 
-// biome-ignore lint/suspicious/noExplicitAny: Notion rich text can be complex
-function RichText({ richText }: { richText: any[] }) {
+function RichText({ richText }: { richText: RichTextItemResponse[] }) {
   if (!richText || richText.length === 0) return null;
 
   return (
     <>
       {richText.map((text, index) => {
         const key = `${text.plain_text}-${index}`;
-        let content = text.plain_text;
+        let content: React.ReactNode = text.plain_text;
 
         if (text.href) {
           content = (
@@ -132,15 +152,15 @@ function RichText({ richText }: { richText: any[] }) {
           );
         }
 
-        if (text.annotations?.bold) {
+        if (text.annotations.bold) {
           content = <strong className="font-semibold">{content}</strong>;
         }
 
-        if (text.annotations?.italic) {
+        if (text.annotations.italic) {
           content = <em>{content}</em>;
         }
 
-        if (text.annotations?.code) {
+        if (text.annotations.code) {
           content = (
             <code className="rounded bg-muted px-1.5 py-0.5 font-mono text-sm">
               {content}
@@ -148,11 +168,11 @@ function RichText({ richText }: { richText: any[] }) {
           );
         }
 
-        if (text.annotations?.strikethrough) {
+        if (text.annotations.strikethrough) {
           content = <s>{content}</s>;
         }
 
-        if (text.annotations?.underline) {
+        if (text.annotations.underline) {
           content = <u>{content}</u>;
         }
 

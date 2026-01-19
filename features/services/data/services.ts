@@ -22,8 +22,7 @@ export const SERVICES: Service[] = [
     id: "pedicure-shellac",
     name: "Pedikúra s lakováním Shellak/Gellak",
     category: "nails",
-    description:
-      "Kompletní pedikúra s dlouhotrvajícím Shellac/Gellac lakem",
+    description: "Kompletní pedikúra s dlouhotrvajícím Shellac/Gellac lakem",
     duration: "50",
     price: "329 Kč",
     setmoreBookingUrl:

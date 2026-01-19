@@ -1,11 +1,10 @@
-"use client";
-
 import { ExternalLink, Star } from "lucide-react";
 import Image from "next/image";
-import { useLocale, useTranslations } from "next-intl";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { useReviews } from "@/features/reviews/hooks/useReviews";
+import { FALLBACK_REVIEWS } from "@/features/reviews/data/reviews";
+import { getGoogleReviews } from "@/features/reviews/services/google-places";
 import type { GoogleReview } from "@/features/reviews/types";
 
 function StarRating({ rating }: { rating: number }) {
@@ -62,25 +61,22 @@ function ReviewCard({ review }: { review: GoogleReview }) {
   );
 }
 
-export function Reviews() {
-  const t = useTranslations("reviews");
-  const locale = useLocale();
-  const { data, loading } = useReviews(locale);
+export async function Reviews() {
+  const t = await getTranslations("reviews");
+  const locale = await getLocale();
 
-  if (loading) {
-    return (
-      <section className="bg-spa-cream/30 py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-sage-green border-t-transparent" />
-            <p className="mt-4 text-charcoal/70">{t("loading")}</p>
-          </div>
-        </div>
-      </section>
-    );
+  let data = await getGoogleReviews(locale);
+
+  if (!data || !data.reviews) {
+    data = {
+      displayName: { text: "HaiAn Beauty", languageCode: "en" },
+      rating: 4.9,
+      userRatingCount: FALLBACK_REVIEWS.length,
+      reviews: FALLBACK_REVIEWS,
+    };
   }
 
-  if (!data || !data.reviews || data.reviews.length === 0) {
+  if (!data.reviews || data.reviews.length === 0) {
     return null;
   }
 
