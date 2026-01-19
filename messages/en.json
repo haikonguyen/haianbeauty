@@ -21,9 +21,11 @@
     "categories": {
       "nails": "Nails",
       "spa": "Spa",
-      "beauty": "Beauty",
+      "beauty": "Beauty & Lashes",
       "massage": "Massage",
-      "laser": "Laser Epilation"
+      "laser": "Laser Hair Removal",
+      "skincare": "Skincare",
+      "lifting-lamination": "Lifting & Lamination"
     },
     "items": {
       "manicure-shellac": {
@@ -91,6 +93,19 @@
     "price": "Price",
     "bookNow": "Book Now",
     "viewAllServices": "View All Services",
+    "filterByCategory": "Filter by Category",
+    "allServices": "All Services",
+    "loading": "Loading services...",
+    "noServices": "No services found in this category",
+    "professionalService": "Professional service",
+    "helpTitle": "Need Help Choosing?",
+    "helpText": "Not sure which service is right for you? Contact us and our expert team will help you select the perfect treatment.",
+    "callUs": "Call Us",
+    "emailUs": "Email Us",
+    "searchPlaceholder": "Search services...",
+    "totalServices": "Total services",
+    "noSearchResults": "No services found matching your search",
+    "clearSearch": "Clear search",
     "common": {
       "min": "min"
     }

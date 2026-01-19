@@ -13,7 +13,7 @@ import { calculateReadingTime } from "../utils/reading-time";
 function getNotionClient() {
   return new Client({
     auth: process.env.NOTION_API_KEY,
-    notionVersion: "2022-02-22",
+    notionVersion: "2022-06-28", // Updated to latest stable version
   });
 }
 
@@ -102,7 +102,9 @@ export async function getBlogPosts(locale: string): Promise<BlogListItem[]> {
 
   try {
     const notion = getNotionClient();
-    const response = await notion.databases.query({
+    // Use bracket notation to access query method for production build compatibility
+    // biome-ignore lint/suspicious/noExplicitAny: Required for Notion API compatibility
+    const response = await (notion.databases as any)["query"]({
       // biome-ignore lint/style/useNamingConvention: Notion API uses snake_case
       database_id: databaseId,
       filter: {
@@ -119,39 +121,41 @@ export async function getBlogPosts(locale: string): Promise<BlogListItem[]> {
       ],
     });
 
-    const posts: BlogListItem[] = response.results.map((page) => {
-      const pageData = page as PageObjectResponse;
-      const properties = pageData.properties;
+    const posts: BlogListItem[] = response.results.map(
+      (page: PageObjectResponse) => {
+        const pageData = page as PageObjectResponse;
+        const properties = pageData.properties;
 
-      // Get featured image from property or fall back to page cover
-      let coverUrl: string | undefined;
-      if (pageData.cover?.type === "external") {
-        coverUrl = pageData.cover.external.url;
-      } else if (pageData.cover?.type === "file") {
-        coverUrl = pageData.cover.file.url;
-      }
+        // Get featured image from property or fall back to page cover
+        let coverUrl: string | undefined;
+        if (pageData.cover?.type === "external") {
+          coverUrl = pageData.cover.external.url;
+        } else if (pageData.cover?.type === "file") {
+          coverUrl = pageData.cover.file.url;
+        }
 
-      const featuredImage =
-        getUrlValue(properties, "Featured Image") || coverUrl;
+        const featuredImage =
+          getUrlValue(properties, "Featured Image") || coverUrl;
 
-      return {
-        id: pageData.id,
-        slug: getRichTextValue(properties, "Slug"),
-        title: getTitleValue(properties, "Title") || "Untitled",
-        excerpt: getRichTextValue(properties, "Excerpt"),
-        featuredImage,
-        videoUrl: getUrlValue(properties, "Video URL"),
-        mediaType: (getSelectValue(properties, "Media Type").toLowerCase() ||
-          "text") as BlogMediaType,
-        category: getMultiSelectValues(
-          properties,
-          "Category",
-        ) as BlogCategory[],
-        publishedDate: getDateValue(properties, "Published Date"),
-        readingTime: getNumberValue(properties, "Reading Time") || 5,
-        availableLanguages: getAvailableLanguages(properties),
-      };
-    });
+        return {
+          id: pageData.id,
+          slug: getRichTextValue(properties, "Slug"),
+          title: getTitleValue(properties, "Title") || "Untitled",
+          excerpt: getRichTextValue(properties, "Excerpt"),
+          featuredImage,
+          videoUrl: getUrlValue(properties, "Video URL"),
+          mediaType: (getSelectValue(properties, "Media Type").toLowerCase() ||
+            "text") as BlogMediaType,
+          category: getMultiSelectValues(
+            properties,
+            "Category",
+          ) as BlogCategory[],
+          publishedDate: getDateValue(properties, "Published Date"),
+          readingTime: getNumberValue(properties, "Reading Time") || 5,
+          availableLanguages: getAvailableLanguages(properties),
+        };
+      },
+    );
 
     return posts;
   } catch (error) {
@@ -176,7 +180,9 @@ export async function getBlogPostBySlug(
 
   try {
     const notion = getNotionClient();
-    const response = await notion.databases.query({
+    // Use bracket notation to access query method for production build compatibility
+    // biome-ignore lint/suspicious/noExplicitAny: Required for Notion API compatibility
+    const response = await (notion.databases as any)["query"]({
       // biome-ignore lint/style/useNamingConvention: Notion API uses snake_case
       database_id: databaseId,
       filter: {

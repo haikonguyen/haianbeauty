@@ -20,9 +20,11 @@
     "categories": {
       "nails": "Ногти",
       "spa": "Спа",
-      "beauty": "Красота",
+      "beauty": "Красота & Ресницы",
       "massage": "Массаж",
-      "laser": "Лазерная эпиляция"
+      "laser": "Лазерная эпиляция",
+      "skincare": "Уход за кожей",
+      "lifting-lamination": "Лифтинг & Ламинирование"
     },
     "items": {
       "manicure-shellac": {
@@ -90,6 +92,19 @@
     "price": "Цена",
     "bookNow": "Записаться",
     "viewAllServices": "Посмотреть все услуги",
+    "filterByCategory": "Фильтр по категории",
+    "allServices": "Все услуги",
+    "loading": "Загрузка услуг...",
+    "noServices": "В этой категории услуг не найдено",
+    "professionalService": "Профессиональная услуга",
+    "helpTitle": "Нужна помощь в выборе?",
+    "helpText": "Не уверены, какая услуга вам подходит? Свяжитесь с нами, и наша команда экспертов поможет вам выбрать идеальную процедуру.",
+    "callUs": "Позвоните нам",
+    "emailUs": "Напишите нам",
+    "searchPlaceholder": "Поиск услуг...",
+    "totalServices": "Всего услуг",
+    "noSearchResults": "Услуги не найдены",
+    "clearSearch": "Очистить поиск",
     "common": {
       "min": "мин"
     }
@@ -192,6 +207,27 @@
     "writeReview": "Написать отзыв",
     "readMore": "Читать далее",
     "showLess": "Свернуть"
+  },
+  "blog": {
+    "title": "Блог",
+    "subtitle": "Советы, истории и новости из мира красоты",
+    "readMore": "Читать далее",
+    "readingTime": "{minutes} мин чтения",
+    "publishedOn": "Опубликовано {date}",
+    "categories": {
+      "all": "Все",
+      "customer-stories": "Истории клиентов",
+      "beauty-tips": "Советы по красоте",
+      "promotions": "Акции",
+      "behind-the-scenes": "За кулисами",
+      "news": "Новости"
+    },
+    "share": "Поделиться",
+    "linkCopied": "Ссылка скопирована!",
+    "relatedPosts": "Похожие посты",
+    "comments": "Комментарии",
+    "availableIn": "Доступно на",
+    "originalLanguage": "Оригинальный язык: {language}"
   },
   "footer": {
     "contactUs": "Свяжитесь с нами",

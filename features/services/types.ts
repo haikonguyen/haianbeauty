@@ -11,7 +11,14 @@ export interface Service {
   features?: string[];
 }
 
-export type ServiceCategory = "nails" | "spa" | "beauty" | "massage" | "laser";
+export type ServiceCategory =
+  | "nails"
+  | "beauty"
+  | "laser"
+  | "skincare"
+  | "lifting-lamination"
+  | "spa"
+  | "massage";
 
 export interface Testimonial {
   id: string;

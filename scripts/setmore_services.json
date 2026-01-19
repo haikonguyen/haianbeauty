@@ -1,0 +1,415 @@
+[
+  {
+    "lengthInMinutes": 20,
+    "title": "Manikúra klasik",
+    "slug": "manicure-classic",
+    "description": "### Klasická manikúra\n\n**Cena: 199 Kč**\n\n* Úprava tvaru nehtů\n* Ošetření nehtových lůžek\n* Péče o kutikuly\n* Leštění nehtů",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 40,
+    "title": "Manikúra s lakováním Shellak/Gellak",
+    "slug": "manicure-shellac-gellac-polish",
+    "description": "### Profesionální manikúra s Shellac/Gellac\n\n**Cena: 399 Kč**\n\n* Úprava tvaru nehtů\n* Ošetření nehtových lůžek\n* Shellac/Gellac lakování\n* Dlouhotrvající výdrž až 3 týdny",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 30,
+    "title": "Kompletní Shellak/ Gellak na rukou",
+    "slug": "manicure-complete-shellac-gellac-hands",
+    "description": "### Kompletní Shellac/Gellac na rukou\n\n**Cena: 249 Kč**\n\n* Přelakování Shellac/Gellac\n* Úprava tvaru\n* Péče o kutikuly\n* Perfektní finish",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 30,
+    "title": "Pedikúra klasik",
+    "slug": "pedicure-classic",
+    "description": "### Klasická pedikúra\n\n**Cena: 359 Kč**\n\n* Úprava nehtů\n* Odstranění ztvrdlé kůže\n* Ošetření chodidel\n* Péče o kutikuly",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 50,
+    "title": "Pedikúra s lakováním Shellak/ Gellak",
+    "slug": "pedicure-shellac-gellac-polish",
+    "description": "### Pedikúra s Shellac/Gellac lakováním\n\n**Cena: 439 Kč**\n\n* Kompletní pedikúra\n* Odstranění ztvrdlé kůže\n* Shellac/Gellac lakování\n* Dlouhotrvající výdrž",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 30,
+    "title": "Kompletní Shellak/ Gellak na nohách",
+    "slug": "pedicure-complete-shellac-gellac-feet",
+    "description": "### Kompletní Shellac/Gellac na nohách\n\n**Cena: 279 Kč**\n\n* Přelakování Shellac/Gellac\n* Úprava tvaru nehtů\n* Péče o kutikuly\n* Perfektní finish",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 15,
+    "title": "Masáž a pární lázeň nohou 15 minut",
+    "slug": "pedicure-foot-massage-steam-bath-15min",
+    "description": "### Relaxační masáž a pární lázeň nohou\n\n**Cena: 139 Kč**\n\n* Pární lázeň nohou\n* Relaxační masáž\n* Hydratace pokožky\n* 15 minut odpočinku",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 45,
+    "title": "Gelové na nohy s lakováním",
+    "slug": "pedicure-gel-nails-polish",
+    "description": "### Gelové nehty na nohy s lakováním\n\n**Cena: 349 Kč**\n\n* Gelová modelace nehtů\n* Lakování\n* Zpevnění nehtů\n* Dlouhotrvající výdrž",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 45,
+    "title": "Pedikúra FOOTLOGIX klasik",
+    "slug": "pedicure-footlogix-classic",
+    "description": "### Profesionální pedikúra FOOTLOGIX\n\n**Cena: 449 Kč**\n\n* Prémiová péče FOOTLOGIX\n* Odstranění ztvrdlé kůže\n* Hloubková hydratace\n* Ošetření problémových míst",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Pedikúra FOOTLOGIX s Shellak/Gellak",
+    "slug": "pedicure-footlogix-shellac-gellac",
+    "description": "### Prémiová pedikúra FOOTLOGIX s lakováním\n\n**Cena: 519 Kč**\n\n* Kompletní péče FOOTLOGIX\n* Shellac/Gellac lakování\n* Hloubková hydratace\n* Dlouhotrvající výsledek",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Gelové s lakováním",
+    "slug": "nail-modeling-new-gel-polish",
+    "description": "### Nové gelové nehty s lakováním\n\n**Cena: 449 Kč**\n\n* Kompletní gelová modelace\n* Lakování dle výběru\n* Zpevnění nehtů\n* Prodloužení nehtů",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Gelové s lakováním",
+    "slug": "nail-refill-gel-polish",
+    "description": "### Doplnění gelových nehtů s lakováním\n\n**Cena: 399 Kč**\n\n* Doplnění gelové modelace\n* Nové lakování\n* Úprava tvaru\n* Zpevnění",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 15,
+    "title": "Mramorový efekt/ vlastní design od",
+    "slug": "nail-decoration-marble-custom-design",
+    "description": "### Mramorový efekt nebo vlastní design\n\n**Cena: od 150 Kč**\n\n* Mramorový efekt\n* Vlastní design dle přání\n* Kreativní zdobení\n* Jedinečný vzhled",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 20,
+    "title": "Lakování/Gellak",
+    "slug": "nail-decoration-polish-gellac",
+    "description": "### Lakování nebo Gellak\n\n**Cena: 250 Kč**\n\n* Profesionální lakování\n* Gellak aplikace\n* Perfektní finish\n* Dlouhotrvající výdrž",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 15,
+    "title": "Cat eyes barva",
+    "slug": "nail-decoration-cat-eyes-color",
+    "description": "### Cat eyes efekt\n\n**Cena: 150 Kč**\n\n* Magnetický efekt\n* 3D vzhled\n* Unikátní design\n* Moderní trend",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 15,
+    "title": "Zrcadlový efekt (chrome)",
+    "slug": "nail-decoration-mirror-chrome",
+    "description": "### Zrcadlový chrome efekt\n\n**Cena: 150 Kč**\n\n* Zrcadlový lesk\n* Chrome finish\n* Luxusní vzhled\n* Moderní design",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 15,
+    "title": "Matný efekt",
+    "slug": "nail-decoration-matte-effect",
+    "description": "### Matný efekt\n\n**Cena: 100 Kč**\n\n* Matný povrch\n* Elegantní vzhled\n* Dlouhotrvající\n* Moderní styl",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 15,
+    "title": "Svítící barva",
+    "slug": "nail-decoration-glow-color",
+    "description": "### Svítící barva\n\n**Cena: 100 Kč**\n\n* Fluorescenční efekt\n* Svítí ve tmě\n* Unikátní vzhled\n* Party efekt",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 20,
+    "title": "ODSTRANĚNÍ NEHTŮ",
+    "slug": "nail-decoration-removal",
+    "description": "### Odstranění umělých nehtů\n\n**Cena: 150 Kč**\n\n* Šetrné odstranění\n* Ošetření nehtů\n* Péče o nehtová lůžka\n* Regenerace",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 15,
+    "title": "Příliš dlouhé nehty",
+    "slug": "nail-decoration-too-long-nails",
+    "description": "### Úprava příliš dlouhých nehtů\n\n**Cena: 50 Kč**\n\n* Zkrácení nehtů\n* Úprava tvaru\n* Vyrovnání délky\n* Profesionální finish",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 15,
+    "title": "Ozdoby nebo piercing nehtu od",
+    "slug": "nail-decoration-ornaments-piercing",
+    "description": "### Ozdoby a piercing nehtů\n\n**Cena: od 50 Kč**\n\n* Kamínky a ozdoby\n* Nail piercing\n* Kreativní zdobení\n* Jedinečný design",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 15,
+    "title": "Nálepky",
+    "slug": "nail-decoration-stickers",
+    "description": "### Dekorativní nálepky\n\n**Cena: 100 Kč**\n\n* Široký výběr motivů\n* Snadná aplikace\n* Dlouhotrvající\n* Kreativní design",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 15,
+    "title": "Fólie",
+    "slug": "nail-decoration-foil",
+    "description": "### Dekorativní fólie\n\n**Cena: 150 Kč**\n\n* Transfer fólie\n* Metalické efekty\n* Holografické vzory\n* Unikátní design",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 15,
+    "title": "Pásky",
+    "slug": "nail-decoration-stripes",
+    "description": "### Dekorativní pásky\n\n**Cena: 100 Kč**\n\n* Metalické pásky\n* Geometrické vzory\n* Elegantní design\n* Moderní styl",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Rašy 2D",
+    "slug": "eyelash-extension-new-2d",
+    "description": "### Prodloužení řas 2D\n\n**Cena: 719 Kč**\n\n* 2D technika\n* Přirozený objem\n* Dlouhotrvající výdrž\n* Profesionální aplikace",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Řasy Mega Volume",
+    "slug": "eyelash-extension-new-mega-volume",
+    "description": "### Prodloužení řas Mega Volume\n\n**Cena: 1039 Kč**\n\n* Mega Volume technika\n* Maximální objem\n* Dramatický efekt\n* Luxusní vzhled",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Řasy Katun",
+    "slug": "eyelash-extension-new-cotton",
+    "description": "### Prodloužení řas Katun\n\n**Cena: 1039 Kč**\n\n* Katun technika\n* Přirozený vzhled\n* Lehké a pohodlné\n* Dlouhotrvající",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Řasy 8D",
+    "slug": "eyelash-extension-new-8d",
+    "description": "### Prodloužení řas 8D\n\n**Cena: 959 Kč**\n\n* 8D technika\n* Extra objem\n* Dramatický efekt\n* Profesionální aplikace",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Řasy 5D",
+    "slug": "eyelash-extension-new-5d",
+    "description": "### Prodloužení řas 5D\n\n**Cena: 879 Kč**\n\n* 5D technika\n* Výrazný objem\n* Přirozený vzhled\n* Dlouhotrvající výdrž",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Řasy 3D",
+    "slug": "eyelash-extension-new-3d",
+    "description": "### Prodloužení řas 3D\n\n**Cena: 799 Kč**\n\n* 3D technika\n* Střední objem\n* Elegantní vzhled\n* Přirozený efekt",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Řasy Klasik",
+    "slug": "eyelash-extension-new-classic",
+    "description": "### Prodloužení řas Klasik\n\n**Cena: 639 Kč**\n\n* Klasická technika\n* Přirozený vzhled\n* Jemný objem\n* Elegantní efekt",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Řasy 2D",
+    "slug": "eyelash-refill-2d",
+    "description": "### Doplnění řas 2D\n\n**Cena: 639 Kč**\n\n* Doplnění 2D řas\n* Obnova objemu\n* Udržení vzhledu\n* Profesionální péče",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Řasy Mega Volume",
+    "slug": "eyelash-refill-mega-volume",
+    "description": "### Doplnění řas Mega Volume\n\n**Cena: 959 Kč**\n\n* Doplnění Mega Volume\n* Obnova maximálního objemu\n* Udržení dramatického efektu\n* Profesionální péče",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Řasy Katun",
+    "slug": "eyelash-refill-cotton",
+    "description": "### Doplnění řas Katun\n\n**Cena: 959 Kč**\n\n* Doplnění Katun řas\n* Obnova přirozeného vzhledu\n* Udržení lehkosti\n* Profesionální péče",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Řasy 8D",
+    "slug": "eyelash-refill-8d",
+    "description": "### Doplnění řas 8D\n\n**Cena: 879 Kč**\n\n* Doplnění 8D řas\n* Obnova extra objemu\n* Udržení dramatického efektu\n* Profesionální péče",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Řasy 5D",
+    "slug": "eyelash-refill-5d",
+    "description": "### Doplnění řas 5D\n\n**Cena: 799 Kč**\n\n* Doplnění 5D řas\n* Obnova výrazného objemu\n* Udržení přirozeného vzhledu\n* Profesionální péče",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Řasy 3D",
+    "slug": "eyelash-refill-3d",
+    "description": "### Doplnění řas 3D\n\n**Cena: 719 Kč**\n\n* Doplnění 3D řas\n* Obnova středního objemu\n* Udržení elegantního vzhledu\n* Profesionální péče",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Řasy Klasik",
+    "slug": "eyelash-refill-classic",
+    "description": "### Doplnění řas Klasik\n\n**Cena: 559 Kč**\n\n* Doplnění klasických řas\n* Obnova přirozeného vzhledu\n* Udržení jemného objemu\n* Profesionální péče",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 15,
+    "title": "Úprava obočí",
+    "slug": "brows-lashes-brow-shaping",
+    "description": "### Úprava obočí\n\n**Cena: 199 Kč**\n\n* Tvarování obočí\n* Pinzeta nebo vosk\n* Perfektní tvar\n* Profesionální péče",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 25,
+    "title": "Úprava + Barvení obočí",
+    "slug": "brows-lashes-brow-shaping-tinting",
+    "description": "### Úprava a barvení obočí\n\n**Cena: 399 Kč**\n\n* Tvarování obočí\n* Profesionální barvení\n* Dlouhotrvající barva\n* Výrazný vzhled",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 15,
+    "title": "Barvení řas",
+    "slug": "brows-lashes-lash-tinting",
+    "description": "### Barvení řas\n\n**Cena: 199 Kč**\n\n* Profesionální barvení\n* Dlouhotrvající barva\n* Výrazný pohled\n* Přirozený efekt",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 15,
+    "title": "Horní ret",
+    "slug": "laser-epilation-upper-lip",
+    "description": "### Laserová epilace horního rtu\n\n**Cena: 299 Kč** (balíček 6 sezení: 1494 Kč)\n\n* Trvalé odstranění chloupků\n* Bezbolestná metoda\n* Rychlý výsledek\n* Hladká pokožka",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 15,
+    "title": "Brada",
+    "slug": "laser-epilation-chin",
+    "description": "### Laserová epilace brady\n\n**Cena: 399 Kč** (balíček 6 sezení: 1994 Kč)\n\n* Trvalé odstranění chloupků\n* Bezbolestná metoda\n* Dlouhotrvající výsledek\n* Hladká pokožka",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 20,
+    "title": "Krk",
+    "slug": "laser-epilation-neck",
+    "description": "### Laserová epilace krku\n\n**Cena: 499 Kč** (balíček 6 sezení: 2494 Kč)\n\n* Trvalé odstranění chloupků\n* Bezbolestná metoda\n* Profesionální péče\n* Hladká pokožka",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 30,
+    "title": "Celý obličej",
+    "slug": "laser-epilation-full-face",
+    "description": "### Laserová epilace celého obličeje\n\n**Cena: 1099 Kč** (balíček 6 sezení: 5494 Kč)\n\n* Kompletní epilace obličeje\n* Trvalé odstranění chloupků\n* Bezbolestná metoda\n* Hladká pokožka",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 25,
+    "title": "Podpaží",
+    "slug": "laser-epilation-underarms",
+    "description": "### Laserová epilace podpaží\n\n**Cena: 599 Kč** (balíček 6 sezení: 2994 Kč)\n\n* Trvalé odstranění chloupků\n* Bezbolestná metoda\n* Rychlý výsledek\n* Hladká pokožka",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 40,
+    "title": "Hrudník",
+    "slug": "laser-epilation-chest",
+    "description": "### Laserová epilace hrudníku\n\n**Cena: 1199 Kč** (balíček 6 sezení: 7194 Kč)\n\n* Trvalé odstranění chloupků\n* Bezbolestná metoda\n* Profesionální péče\n* Hladká pokožka",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 30,
+    "title": "Břicho",
+    "slug": "laser-epilation-abdomen",
+    "description": "### Laserová epilace břicha\n\n**Cena: 999 Kč** (balíček 6 sezení: 5994 Kč)\n\n* Trvalé odstranění chloupků\n* Bezbolestná metoda\n* Profesionální péče\n* Hladká pokožka",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 50,
+    "title": "Záda",
+    "slug": "laser-epilation-back",
+    "description": "### Laserová epilace zad\n\n**Cena: 1499 Kč** (balíček 6 sezení: 8994 Kč)\n\n* Trvalé odstranění chloupků\n* Bezbolestná metoda\n* Profesionální péče\n* Hladká pokožka",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Celé nohy",
+    "slug": "laser-epilation-full-legs",
+    "description": "### Laserová epilace celých nohou\n\n**Cena: 1399 Kč** (balíček 6 sezení: 8394 Kč)\n\n* Kompletní epilace nohou\n* Trvalé odstranění chloupků\n* Bezbolestná metoda\n* Hladká pokožka",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 150,
+    "title": "Celé tělo",
+    "slug": "laser-epilation-full-body",
+    "description": "### Laserová epilace celého těla\n\n**Cena: 9999 Kč** (balíček 6 sezení: 59994 Kč)\n\n* Kompletní epilace těla\n* Trvalé odstranění chloupků\n* Bezbolestná metoda\n* Hladká pokožka po celém těle",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Kombinovaný balíček (Lifting & Laminace)",
+    "slug": "lifting-lamination-combined-package",
+    "description": "### Kombinovaný balíček Lifting & Laminace\n\n**Cena: 1099 Kč**\n\n* Lifting řas\n* Laminace obočí\n* Kompletní péče\n* Dlouhotrvající výsledek",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 45,
+    "title": "Laminace obočí + úprava + barva",
+    "slug": "lifting-lamination-brow-lamination-shaping-tint",
+    "description": "### Laminace obočí s úpravou a barvou\n\n**Cena: 599 Kč**\n\n* Laminace obočí\n* Tvarování\n* Profesionální barvení\n* Dlouhotrvající výsledek",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 45,
+    "title": "Lifting řas + barvení řas",
+    "slug": "lifting-lamination-lash-lift-tinting",
+    "description": "### Lifting řas s barvením\n\n**Cena: 599 Kč**\n\n* Lifting řas\n* Profesionální barvení\n* Výrazný pohled\n* Dlouhotrvající výsledek",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Mikroneedling - Rolling",
+    "slug": "skincare-microneedling-rolling",
+    "description": "### Mikroneedling - Rolling technika\n\n**Cena: 1999 Kč**\n\n* Omlazení pleti\n* Redukce jizev a vrásek\n* Stimulace kolagenu\n* Zlepšení textury pleti",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Mikroneedling - Dermapen",
+    "slug": "skincare-microneedling-dermapen",
+    "description": "### Mikroneedling - Dermapen technika\n\n**Cena: 2199 Kč**\n\n* Pokročilá technologie\n* Omlazení pleti\n* Redukce jizev a vrásek\n* Stimulace kolagenu",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Peeling",
+    "slug": "skincare-peeling",
+    "description": "### Profesionální peeling pleti\n\n**Cena: 1399 Kč**\n\n* Hloubkové čištění\n* Odstranění odumřelých buněk\n* Rozjasnění pleti\n* Vyhlazení textury",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Nano Exo",
+    "slug": "skincare-nano-exo",
+    "description": "### Nano Exo ošetření\n\n**Cena: 1399 Kč**\n\n* Pokročilá technologie\n* Hloubková regenerace\n* Omlazení pleti\n* Zlepšení textury",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  },
+  {
+    "lengthInMinutes": 60,
+    "title": "Komplexní péče o pleť",
+    "slug": "skincare-comprehensive-facial",
+    "description": "### Komplexní péče o pleť\n\n**Cena: 999 Kč**\n\n* Hloubkové čištění\n* Hydratace\n* Výživa pleti\n* Relaxační masáž obličeje",
+    "locations": [{"type": "address", "address": "Jaromirova", "public": true}]
+  }
+]
