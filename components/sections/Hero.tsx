@@ -1,6 +1,7 @@
 import { ChevronDown } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Button } from "@/components/ui/button";
+import { Link } from "@/i18n/routing";
 
 export async function Hero() {
   const t = await getTranslations("hero");
@@ -34,13 +35,7 @@ export async function Hero() {
               size="lg"
               className="animate-scale-in bg-spa-gold px-8 py-6 text-lg text-white hover:bg-spa-gold/90"
             >
-              <a
-                href="https://anbeauty.setmore.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t("bookAppointment")}
-              </a>
+              <Link href="/services">{t("bookAppointment")}</Link>
             </Button>
             <Button
               asChild

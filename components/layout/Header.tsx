@@ -2,8 +2,9 @@
 
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/routing";
 import { LanguageSwitcher } from "./LanguageSwitcher";
@@ -11,11 +12,13 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const t = useTranslations("nav");
+  const pathname = usePathname();
+  const router = useRouter();
 
   const navigation: Array<
     | {
         name: string;
-        href: "/" | "/portfolio" | "/booking" | "/blog";
+        href: "/" | "/portfolio" | "/services" | "/blog";
         useLink: true;
       }
     | { name: string; href: string; useLink: false }
@@ -28,37 +31,63 @@ export function Header() {
     { name: t("contact"), href: "/#contact", useLink: false },
   ];
 
+  // Check if we're on the homepage (supports all locales)
+  const isHomepage = pathname === "/" || pathname.match(/^\/[a-z]{2}$/);
+
+  // Scroll to section helper function
+  const scrollToSection = useCallback((targetId: string) => {
+    if (targetId === "contact") {
+      window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: "smooth",
+      });
+    } else {
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        const headerOffset = 80;
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    }
+  }, []);
+
+  // Handle scrolling to section after navigation
+  useEffect(() => {
+    // Check if there's a hash in the URL
+    const hash = window.location.hash;
+    if (hash && isHomepage) {
+      // Wait a bit for the page to render
+      setTimeout(() => {
+        const targetId = hash.substring(1); // Remove "#"
+        scrollToSection(targetId);
+      }, 100);
+    }
+  }, [isHomepage, scrollToSection]);
+
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
     const href = e.currentTarget.getAttribute("href");
 
     // Check if it's a hash link (e.g., /#about, /#services, /#contact)
     if (href?.startsWith("/#")) {
-      e.preventDefault();
       const targetId = href.substring(2); // Remove "/#" to get the id
 
       // Close mobile menu if open
       setMobileMenuOpen(false);
 
-      // Special handling for contact (scroll to bottom)
-      if (targetId === "contact") {
-        window.scrollTo({
-          top: document.documentElement.scrollHeight,
-          behavior: "smooth",
-        });
+      // If we're on the homepage, smooth scroll
+      if (isHomepage) {
+        e.preventDefault();
+        scrollToSection(targetId);
       } else {
-        // For other sections, find the element and scroll to it
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-          const headerOffset = 80; // Height of fixed header
-          const elementPosition = targetElement.getBoundingClientRect().top;
-          const offsetPosition =
-            elementPosition + window.pageYOffset - headerOffset;
-
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth",
-          });
-        }
+        // If we're not on homepage, navigate to homepage with hash
+        e.preventDefault();
+        router.push(href);
       }
     }
   };
@@ -107,13 +136,7 @@ export function Header() {
               asChild
               className="bg-spa-gold text-white hover:bg-spa-gold/90"
             >
-              <a
-                href="https://anbeauty.setmore.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t("bookNow")}
-              </a>
+              <Link href="/services">{t("bookNow")}</Link>
             </Button>
             <LanguageSwitcher />
           </div>
@@ -166,14 +189,12 @@ export function Header() {
                   asChild
                   className="w-full bg-spa-gold text-white hover:bg-spa-gold/90"
                 >
-                  <a
-                    href="https://anbeauty.setmore.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href="/services"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {t("bookNow")}
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </div>

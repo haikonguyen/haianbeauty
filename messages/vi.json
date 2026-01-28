@@ -20,9 +20,11 @@
     "categories": {
       "nails": "Móng",
       "spa": "Spa",
-      "beauty": "Làm đẹp",
+      "beauty": "Làm đẹp & Mi",
       "massage": "Massage",
-      "laser": "Triệt lông laser"
+      "laser": "Triệt lông laser",
+      "skincare": "Chăm sóc da",
+      "lifting-lamination": "Lifting & Lamination"
     },
     "items": {
       "manicure-shellac": {
@@ -90,6 +92,19 @@
     "price": "Giá",
     "bookNow": "Đặt lịch",
     "viewAllServices": "Xem tất cả dịch vụ",
+    "filterByCategory": "Lọc theo danh mục",
+    "allServices": "Tất cả dịch vụ",
+    "loading": "Đang tải dịch vụ...",
+    "noServices": "Không tìm thấy dịch vụ nào trong danh mục này",
+    "professionalService": "Dịch vụ chuyên nghiệp",
+    "helpTitle": "Cần giúp lựa chọn?",
+    "helpText": "Không chắc dịch vụ nào phù hợp với bạn? Liên hệ với chúng tôi và đội ngũ chuyên gia sẽ giúp bạn chọn liệu trình hoàn hảo.",
+    "callUs": "Gọi cho chúng tôi",
+    "emailUs": "Email cho chúng tôi",
+    "searchPlaceholder": "Tìm kiếm dịch vụ...",
+    "totalServices": "Tổng số dịch vụ",
+    "noSearchResults": "Không tìm thấy dịch vụ nào phù hợp",
+    "clearSearch": "Xóa tìm kiếm",
     "common": {
       "min": "phút"
     }
@@ -192,6 +207,27 @@
     "writeReview": "Viết đánh giá",
     "readMore": "Đọc thêm",
     "showLess": "Thu gọn"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Mẹo, câu chuyện và tin tức từ thế giới làm đẹp",
+    "readMore": "Đọc thêm",
+    "readingTime": "{minutes} phút đọc",
+    "publishedOn": "Xuất bản {date}",
+    "categories": {
+      "all": "Tất cả",
+      "customer-stories": "Câu chuyện khách hàng",
+      "beauty-tips": "Mẹo làm đẹp",
+      "promotions": "Khuyến mãi",
+      "behind-the-scenes": "Hậu trường",
+      "news": "Tin tức"
+    },
+    "share": "Chia sẻ",
+    "linkCopied": "Đã sao chép liên kết!",
+    "relatedPosts": "Bài viết liên quan",
+    "comments": "Bình luận",
+    "availableIn": "Có sẵn bằng",
+    "originalLanguage": "Ngôn ngữ gốc: {language}"
   },
   "footer": {
     "contactUs": "Liên hệ",

@@ -1,6 +1,7 @@
 import { Calendar } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Button } from "@/components/ui/button";
+import { Link } from "@/i18n/routing";
 
 export async function BookingCTA() {
   const t = await getTranslations("bookingCta");
@@ -23,13 +24,7 @@ export async function BookingCTA() {
             size="lg"
             className="bg-spa-gold px-10 py-6 text-lg text-white shadow-2xl transition-all hover:bg-spa-gold/90 hover:shadow-spa-gold/50"
           >
-            <a
-              href="https://anbeauty.setmore.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t("button")}
-            </a>
+            <Link href="/services">{t("button")}</Link>
           </Button>
         </div>
       </div>

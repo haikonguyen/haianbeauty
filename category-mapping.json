@@ -1,0 +1,356 @@
+[
+  {
+    "id": 27210,
+    "title": "Manikúra klasik",
+    "slug": "manicure-classic",
+    "category": "nails"
+  },
+  {
+    "id": 27211,
+    "title": "Manikúra s lakováním Shellak/Gellak",
+    "slug": "manicure-shellac-gellac-polish",
+    "category": "nails"
+  },
+  {
+    "id": 27212,
+    "title": "Kompletní Shellak/ Gellak na rukou",
+    "slug": "manicure-complete-shellac-gellac-hands",
+    "category": "nails"
+  },
+  {
+    "id": 27213,
+    "title": "Pedikúra klasik",
+    "slug": "pedicure-classic",
+    "category": "nails"
+  },
+  {
+    "id": 27214,
+    "title": "Pedikúra s lakováním Shellak/ Gellak",
+    "slug": "pedicure-shellac-gellac-polish",
+    "category": "nails"
+  },
+  {
+    "id": 27215,
+    "title": "Kompletní Shellak/ Gellak na nohách",
+    "slug": "pedicure-complete-shellac-gellac-feet",
+    "category": "nails"
+  },
+  {
+    "id": 27216,
+    "title": "Masáž a pární lázeň nohou 15 minut",
+    "slug": "pedicure-foot-massage-steam-bath-15min",
+    "category": "nails"
+  },
+  {
+    "id": 27220,
+    "title": "Gelové s lakováním",
+    "slug": "nail-modeling-new-gel-polish",
+    "category": "nails"
+  },
+  {
+    "id": 27222,
+    "title": "Mramorový efekt/ vlastní design od",
+    "slug": "nail-decoration-marble-custom-design",
+    "category": "nails"
+  },
+  {
+    "id": 27217,
+    "title": "Gelové na nohy s lakováním",
+    "slug": "pedicure-gel-nails-polish",
+    "category": "nails"
+  },
+  {
+    "id": 27218,
+    "title": "Pedikúra FOOTLOGIX klasik",
+    "slug": "pedicure-footlogix-classic",
+    "category": "nails"
+  },
+  {
+    "id": 27219,
+    "title": "Pedikúra FOOTLOGIX s Shellak/Gellak",
+    "slug": "pedicure-footlogix-shellac-gellac",
+    "category": "nails"
+  },
+  {
+    "id": 27221,
+    "title": "Gelové s lakováním",
+    "slug": "nail-refill-gel-polish",
+    "category": "nails"
+  },
+  {
+    "id": 27225,
+    "title": "Zrcadlový efekt (chrome)",
+    "slug": "nail-decoration-mirror-chrome",
+    "category": "nails"
+  },
+  {
+    "id": 27223,
+    "title": "Lakování/Gellak",
+    "slug": "nail-decoration-polish-gellac",
+    "category": "nails"
+  },
+  {
+    "id": 27224,
+    "title": "Cat eyes barva",
+    "slug": "nail-decoration-cat-eyes-color",
+    "category": "nails"
+  },
+  {
+    "id": 27230,
+    "title": "Příliš dlouhé nehty",
+    "slug": "nail-decoration-too-long-nails",
+    "category": "nails"
+  },
+  {
+    "id": 27226,
+    "title": "Matný efekt",
+    "slug": "nail-decoration-matte-effect",
+    "category": "nails"
+  },
+  {
+    "id": 27228,
+    "title": "Svítící barva",
+    "slug": "nail-decoration-glow-color",
+    "category": "nails"
+  },
+  {
+    "id": 27229,
+    "title": "ODSTRANĚNÍ NEHTŮ",
+    "slug": "nail-decoration-removal",
+    "category": "nails"
+  },
+  {
+    "id": 27231,
+    "title": "Ozdoby nebo piercing nehtu od",
+    "slug": "nail-decoration-ornaments-piercing",
+    "category": "nails"
+  },
+  {
+    "id": 27232,
+    "title": "Nálepky",
+    "slug": "nail-decoration-stickers",
+    "category": "nails"
+  },
+  {
+    "id": 27251,
+    "title": "Barvení řas",
+    "slug": "brows-lashes-lash-tinting",
+    "category": "beauty"
+  },
+  {
+    "id": 27265,
+    "title": "Kombinovaný balíček (Lifting & Laminace)",
+    "slug": "lifting-lamination-combined-package",
+    "category": "lifting-lamination"
+  },
+  {
+    "id": 27233,
+    "title": "Fólie",
+    "slug": "nail-decoration-foil",
+    "category": "nails"
+  },
+  {
+    "id": 27234,
+    "title": "Pásky",
+    "slug": "nail-decoration-stripes",
+    "category": "nails"
+  },
+  {
+    "id": 27235,
+    "title": "Rašy 2D",
+    "slug": "eyelash-extension-new-2d",
+    "category": "beauty"
+  },
+  {
+    "id": 27236,
+    "title": "Řasy Mega Volume",
+    "slug": "eyelash-extension-new-mega-volume",
+    "category": "beauty"
+  },
+  {
+    "id": 27237,
+    "title": "Řasy Katun",
+    "slug": "eyelash-extension-new-cotton",
+    "category": "beauty"
+  },
+  {
+    "id": 27243,
+    "title": "Řasy Mega Volume",
+    "slug": "eyelash-refill-mega-volume",
+    "category": "beauty"
+  },
+  {
+    "id": 27238,
+    "title": "Řasy 8D",
+    "slug": "eyelash-extension-new-8d",
+    "category": "beauty"
+  },
+  {
+    "id": 27239,
+    "title": "Řasy 5D",
+    "slug": "eyelash-extension-new-5d",
+    "category": "beauty"
+  },
+  {
+    "id": 27240,
+    "title": "Řasy 3D",
+    "slug": "eyelash-extension-new-3d",
+    "category": "beauty"
+  },
+  {
+    "id": 27241,
+    "title": "Řasy Klasik",
+    "slug": "eyelash-extension-new-classic",
+    "category": "beauty"
+  },
+  {
+    "id": 27242,
+    "title": "Řasy 2D",
+    "slug": "eyelash-refill-2d",
+    "category": "beauty"
+  },
+  {
+    "id": 27244,
+    "title": "Řasy Katun",
+    "slug": "eyelash-refill-cotton",
+    "category": "beauty"
+  },
+  {
+    "id": 27256,
+    "title": "Brada",
+    "slug": "laser-epilation-chin",
+    "category": "laser"
+  },
+  {
+    "id": 27245,
+    "title": "Řasy 8D",
+    "slug": "eyelash-refill-8d",
+    "category": "beauty"
+  },
+  {
+    "id": 27246,
+    "title": "Řasy 5D",
+    "slug": "eyelash-refill-5d",
+    "category": "beauty"
+  },
+  {
+    "id": 27247,
+    "title": "Řasy 3D",
+    "slug": "eyelash-refill-3d",
+    "category": "beauty"
+  },
+  {
+    "id": 27249,
+    "title": "Úprava obočí",
+    "slug": "brows-lashes-brow-shaping",
+    "category": "beauty"
+  },
+  {
+    "id": 27250,
+    "title": "Úprava + Barvení obočí",
+    "slug": "brows-lashes-brow-shaping-tinting",
+    "category": "beauty"
+  },
+  {
+    "id": 27271,
+    "title": "Nano Exo",
+    "slug": "skincare-nano-exo",
+    "category": "skincare"
+  },
+  {
+    "id": 27248,
+    "title": "Řasy Klasik",
+    "slug": "eyelash-refill-classic",
+    "category": "beauty"
+  },
+  {
+    "id": 27252,
+    "title": "Horní ret",
+    "slug": "laser-epilation-upper-lip",
+    "category": "laser"
+  },
+  {
+    "id": 27253,
+    "title": "Krk",
+    "slug": "laser-epilation-neck",
+    "category": "laser"
+  },
+  {
+    "id": 27254,
+    "title": "Celý obličej",
+    "slug": "laser-epilation-full-face",
+    "category": "laser"
+  },
+  {
+    "id": 27255,
+    "title": "Podpaží",
+    "slug": "laser-epilation-underarms",
+    "category": "laser"
+  },
+  {
+    "id": 27257,
+    "title": "Hrudník",
+    "slug": "laser-epilation-chest",
+    "category": "laser"
+  },
+  {
+    "id": 27258,
+    "title": "Břicho",
+    "slug": "laser-epilation-abdomen",
+    "category": "laser"
+  },
+  {
+    "id": 27259,
+    "title": "Záda",
+    "slug": "laser-epilation-back",
+    "category": "laser"
+  },
+  {
+    "id": 27260,
+    "title": "Celé nohy",
+    "slug": "laser-epilation-full-legs",
+    "category": "laser"
+  },
+  {
+    "id": 27261,
+    "title": "Celé tělo",
+    "slug": "laser-epilation-full-body",
+    "category": "laser"
+  },
+  {
+    "id": 27266,
+    "title": "Laminace obočí + úprava + barva",
+    "slug": "lifting-lamination-brow-lamination-shaping-tint",
+    "category": "lifting-lamination"
+  },
+  {
+    "id": 27267,
+    "title": "Lifting řas + barvení řas",
+    "slug": "lifting-lamination-lash-lift-tinting",
+    "category": "lifting-lamination"
+  },
+  {
+    "id": 27268,
+    "title": "Mikroneedling - Rolling",
+    "slug": "skincare-microneedling-rolling",
+    "category": "skincare"
+  },
+  {
+    "id": 27269,
+    "title": "Mikroneedling - Dermapen",
+    "slug": "skincare-microneedling-dermapen",
+    "category": "skincare"
+  },
+  {
+    "id": 27270,
+    "title": "Peeling",
+    "slug": "skincare-peeling",
+    "category": "skincare"
+  },
+  {
+    "id": 27272,
+    "title": "Komplexní péče o pleť",
+    "slug": "skincare-comprehensive-facial",
+    "category": "skincare"
+  }
+]
